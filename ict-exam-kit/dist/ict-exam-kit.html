@@ -222,7 +222,7 @@ const ACCENTS = [
   {k:"rust", name:"কমলা", l:"#b8521a", d:"#f0a070"},
   {k:"red", name:"লাল", l:"#b0283a", d:"#ff8f9c"}
 ];
-const DEF = {theme:"system", accent:"green", size:18, shuffleQ:true, shuffleO:false, hints:false, timer:true, starOnly:false, chapters:DATA.chapters.map(c=>c.n), order:"mix"};
+const DEF = {theme:"system", accent:"green", size:18, shuffleQ:true, shuffleO:false, hints:false, timer:true, starOnly:false, count:80, chapters:DATA.chapters.map(c=>c.n), order:"mix"};
 
 /* ---------- storage ---------- */
 let S = {v:1, cs:{}, tick:0, time:{}, ustar:{}, set:Object.assign({},DEF), mastered100:{}};
@@ -260,12 +260,55 @@ function limits(c){ // per-question time limits, tuned by length
 const chOrder = () => DATA.chapters.slice().sort((a,b)=>b.w-a.w).map(c=>c.n);
 
 /* ---------- pools ---------- */
-function basePool(){
+function fullPool(){
   const set = new Set(S.set.chapters);
   return CARDS.filter(c => set.has(c.c) && (!S.set.starOnly || starred(c)));
 }
+/* best N cards: split by chapter weight (min 1 each), then inside a chapter
+   round-robin over topics (topics that repeat most first), board + starred first */
+let _sel = null, _selKey = "";
+function selected(){
+  const key = [S.set.count, S.set.chapters.slice().sort().join(), S.set.starOnly, Object.keys(S.ustar).length].join("|");
+  if(_sel && key===_selKey) return _sel;
+  _selKey = key;
+  const pool = fullPool(), n = S.set.count;
+  if(n>=500 || n>=pool.length){ _sel = pool; return pool; }
+  const chs = [...new Set(pool.map(c=>c.c))];
+  const by = {}; chs.forEach(c=>by[c]=pool.filter(x=>x.c===c));
+  const wsum = chs.reduce((a,c)=>a+CH[c].w,0);
+  const share = c => CH[c].w/wsum*n;
+  const quota = {}; let used = 0;
+  chs.forEach(c=>{ quota[c] = Math.min(by[c].length, Math.max(n>=chs.length?1:0, Math.floor(share(c)))); used += quota[c]; });
+  let guard = 0;
+  while(used<n && guard++<5000){
+    let best=null, bs=-1e9;
+    chs.forEach(c=>{ if(quota[c]<by[c].length){ const sc = share(c)-quota[c]; if(sc>bs){bs=sc;best=c;} } });
+    if(best==null) break; quota[best]++; used++;
+  }
+  guard = 0;
+  while(used>n && guard++<5000){
+    let worst=null, ws=-1e9;
+    chs.forEach(c=>{ if(quota[c]>1){ const sc = quota[c]-share(c); if(sc>ws){ws=sc;worst=c;} } });
+    if(worst==null) break; quota[worst]--; used--;
+  }
+  const score = c => (starred(c)?3:0) + (c.r?2:0) + Math.min(c.s,5)*0.3 + (cs(c.id).w>0?2:0);
+  const out = [];
+  chs.forEach(ch=>{
+    const groups = {};
+    by[ch].forEach(c=>{ (groups[c.t]=groups[c.t]||[]).push(c); });
+    const gl = Object.values(groups).map(g=>{ g.sort((a,b)=>score(b)-score(a)); return {g, rank: score(g[0]) + Math.min(g.length,6)*0.7}; }).sort((a,b)=>b.rank-a.rank);
+    let taken = 0, i = 0;
+    while(taken<quota[ch]){
+      let any = false;
+      for(const x of gl){ if(taken>=quota[ch]) break; if(x.g[i]){ out.push(x.g[i]); taken++; any = true; } }
+      if(!any) break; i++;
+    }
+  });
+  _sel = out; return out;
+}
+function basePool(full){ return full ? fullPool() : selected(); }
 function chapterMastery(n){
-  const all = CARDS.filter(c=>c.c===n); if(!all.length) return 0;
+  const all = selected().filter(c=>c.c===n); if(!all.length) return 0;
   return all.filter(c=>cs(c.id).m).length / all.length;
 }
 
@@ -285,7 +328,7 @@ function firstOpenChapter(){
 function poolFor(){
   let p = basePool();
   if(sess.mode==="chapter") p = p.filter(c=>c.c===sess.ch);
-  if(sess.mode==="wrong") p = p.filter(c=>cs(c.id).w>0 && !sess.done.has(c.id));
+  if(sess.mode==="wrong") p = basePool(true).filter(c=>cs(c.id).w>0 && !sess.done.has(c.id));
   if(sess.mode==="star") p = CARDS.filter(c=>new Set(S.set.chapters).has(c.c) && starred(c) && !sess.done.has(c.id));
   if(sess.mode==="morning") p = p.filter(c=>{ const s=cs(c.id); return (s.w>0 || starred(c) || s.last==="hard" || s.last==="again") && !sess.done.has(c.id); });
   return p;
@@ -467,19 +510,20 @@ function updateStatus(){
   const pool = basePool();
   const m = pool.filter(c=>cs(c.id).m).length;
   let left = "", right = "";
-  if(sess.mode==="chapter" && sess.ch!=null){ const p = CARDS.filter(c=>c.c===sess.ch); const mm = p.filter(c=>cs(c.id).m).length; left = `অধ্যায় ${bn(sess.ch)}: ${bn(mm)}/${bn(p.length)} আয়ত্ত`; $("#stBar").style.width = (mm*100/p.length)+"%"; }
+  if(sess.mode==="chapter" && sess.ch!=null){ const p = selected().filter(c=>c.c===sess.ch); const mm = p.filter(c=>cs(c.id).m).length; left = `অধ্যায় ${bn(sess.ch)}: ${bn(mm)}/${bn(p.length)} আয়ত্ত`; $("#stBar").style.width = (mm*100/p.length)+"%"; }
   else { left = `আয়ত্ত ${bn(m)}/${bn(pool.length)}`; $("#stBar").style.width = (pool.length? m*100/pool.length:0)+"%"; }
   right = `এই সেশন: ${bn(sess.right)}/${bn(sess.count)}`;
   if(sess.mode==="morning"){ const rem = Math.max(0, sess.limit-(Date.now()-sess.t0)); right += ` · বাকি ${mmss(rem)}`; }
   if(sess.mode==="wrong"){ right = `বাকি ভুল ${bn(poolFor().length)} · ` + right; }
   $("#stLeft").textContent = left; $("#stRight").textContent = right;
-  $("#brandSub").textContent = `${bn(CARDS.length)} কার্ড`;
+  $("#brandSub").textContent = `${bn(selected().length)}/${bn(CARDS.length)} কার্ড`;
 }
 const MODES = [["mix","মিশ্র"],["chapter","অধ্যায় ধরে"],["wrong","শুধু ভুল"],["star","শুধু তারকা"],["morning","সকালের ১৫ মিনিট"]];
 function renderModes(){
   const h = MODES.map(([k,n])=>`<button class="chip" data-m="${k}" aria-pressed="${sess&&sess.mode===k}">${n}</button>`).join("");
-  $("#modes").innerHTML = h;
-  document.querySelectorAll("#modes .chip").forEach(b=>b.addEventListener("click",()=>{
+  $("#modes").innerHTML = h + `<button class="chip" id="cntChip" style="border-style:dashed">প্রশ্ন ${bn(selected().length)} ⚙</button>`;
+  $("#cntChip").addEventListener("click",()=>{ $("#tab-set").click(); setTimeout(()=>{ const r=$("#sCount"); if(r) r.scrollIntoView({block:"center"}); },50); });
+  document.querySelectorAll("#modes .chip[data-m]").forEach(b=>b.addEventListener("click",()=>{
     const m = b.dataset.m;
     if(m==="mix"||m==="chapter"){ S.set.order = m; save(); }
     newSession(m);
@@ -527,13 +571,13 @@ function renderNotes(){
 
 /* ---------- progress ---------- */
 function renderProg(){
-  const seen = CARDS.filter(c=>cs(c.id).n>0).length, mast = CARDS.filter(c=>cs(c.id).m).length;
+  const SEL = selected(); const seen = SEL.filter(c=>cs(c.id).n>0).length, mast = SEL.filter(c=>cs(c.id).m).length;
   const tot = CARDS.reduce((a,c)=>a+cs(c.id).n,0), wr = CARDS.reduce((a,c)=>a+cs(c.id).w,0);
   const acc = tot ? Math.round((tot-wr)*100/tot) : 0;
-  $("#statsHost").innerHTML = `<div><b>${bn(mast)}</b><span>আয়ত্ত কার্ড</span></div><div><b>${bn(seen)}/${bn(CARDS.length)}</b><span>দেখা হয়েছে</span></div><div><b>${bn(acc)}%</b><span>নির্ভুলতা</span></div>`;
+  $("#statsHost").innerHTML = `<div><b>${bn(mast)}</b><span>আয়ত্ত কার্ড</span></div><div><b>${bn(seen)}/${bn(SEL.length)}</b><span>দেখা হয়েছে</span></div><div><b>${bn(acc)}%</b><span>নির্ভুলতা</span></div>`;
   $("#chHost").innerHTML = chOrder().map(n=>{
     const ch = CH[n], p = Math.round(chapterMastery(n)*100), spent = Math.round((S.time[n]||0)/60000);
-    const cnt = CARDS.filter(c=>c.c===n).length;
+    const cnt = SEL.filter(c=>c.c===n).length;
     return `<div class="chrow"><span class="cn">অধ্যায় ${bn(n)}</span><div class="bar"><i style="width:${p}%"></i></div><span class="pct">${bn(p)}%</span>
       <span class="ct">${esc(ch.title)} · ${bn(cnt)} কার্ড · <span class="budget">কুইজ সময় ${bn(spent)}/${bn(ch.quizMin)} মিনিট</span></span></div>`;
   }).join("");
@@ -557,6 +601,7 @@ function renderSet(){
   <div class="srow"><label>থিম</label>${seg("sTheme",[["system","সিস্টেম"],["light","লাইট"],["dark","ডার্ক"]],s.theme)}</div>
   <div class="srow"><label>রং</label><div class="swatches" id="sAccent">${ACCENTS.map(a=>`<button data-v="${a.k}" aria-pressed="${a.k===s.accent}" aria-label="${a.name}" style="background:${isDark()?a.d:a.l}"></button>`).join("")}</div></div>
   <div class="srow"><label>লেখার আকার</label>${seg("sSize",[[16,"ছোট"],[18,"মাঝারি"],[20,"বড়"],[22,"খুব বড়"]],s.size)}</div>
+  <div class="srow stack"><label for="sCount">প্রশ্নসংখ্যা: <b id="cntVal"></b><small id="cntEst"></small></label><input type="range" id="sCount" min="10" max="500" step="5" value="${s.count}" style="width:100%;accent-color:var(--accent)"><div class="chfilter" id="sPre">${[[25,"২৫"],[50,"৫০"],[100,"১০০"],[200,"২০০"],[500,"সব"]].map(([v,n])=>`<button class="chip" data-v="${v}" aria-pressed="${s.count===v}">${n}</button>`).join("")}</div></div>
   <div class="srow"><label>ক্রম<small>মিশ্র: গুরুত্ব অনুযায়ী ওজনযুক্ত এলোমেলো। অধ্যায় ধরে: এক অধ্যায় শেষে পরেরটা।</small></label>${seg("sOrder",[["mix","মিশ্র"],["chapter","অধ্যায় ধরে"]],s.order)}</div>
   <div class="srow"><label for="sShufQ">প্রশ্ন এলোমেলো</label>${sw("sShufQ",s.shuffleQ)}</div>
   <div class="srow"><label for="sShufO">বিকল্প এলোমেলো<small>ক-ঘ এর ক্রম বদলাবে</small></label>${sw("sShufO",s.shuffleO)}</div>
@@ -565,6 +610,16 @@ function renderSet(){
   <div class="srow"><label for="sStar">শুধু তারকা চিহ্নিত<small>বোর্ডে বারবার আসা ধারণা ও তোমার চিহ্নিত কার্ড</small></label>${sw("sStar",s.starOnly)}</div>
   <div class="srow stack"><label>অধ্যায় ফিল্টার<small>যে অধ্যায়গুলো অনুশীলনে আসবে</small></label><div class="chfilter" id="sCh">${chOrder().map(n=>`<button class="chip" data-v="${n}" aria-pressed="${s.chapters.includes(n)}">${bn(n)}</button>`).join("")}</div></div>`;
   const segBind = (id,key,num) => document.querySelectorAll(`#${id} button`).forEach(b=>b.addEventListener("click",()=>{ S.set[key] = num? +b.dataset.v : b.dataset.v; save(); applyTheme(); renderSet(); if(key==="order"){ newSession(S.set.order); } }));
+  const paintCount = v => {
+    const old = S.set.count; S.set.count = v; const sel = selected(); S.set.count = old; _selKey = "";
+    $("#cntVal").textContent = v>=500 ? `সব (${bn(fullPool().length)}টি)` : `${bn(sel.length)}টি`;
+    const per = chOrder().filter(n=>sel.some(c=>c.c===n)).map(n=>`অ${bn(n)}: ${bn(sel.filter(c=>c.c===n).length)}`).join(" · ");
+    $("#cntEst").textContent = `প্রায় ${bn(Math.round(sel.length*35/60))} মিনিট (প্রতি প্রশ্ন ~৩৫ সেকেন্ড). বণ্টন: ${per}`;
+  };
+  paintCount(s.count);
+  $("#sCount").addEventListener("input",e=>paintCount(+e.target.value));
+  $("#sCount").addEventListener("change",e=>{ S.set.count = +e.target.value; _selKey = ""; save(); renderSet(); newSession(sess?sess.mode:S.set.order); });
+  document.querySelectorAll("#sPre button").forEach(b=>b.addEventListener("click",()=>{ S.set.count = +b.dataset.v; _selKey = ""; save(); renderSet(); newSession(sess?sess.mode:S.set.order); }));
   segBind("sTheme","theme"); segBind("sSize","size",true); segBind("sOrder","order");
   document.querySelectorAll("#sAccent button").forEach(b=>b.addEventListener("click",()=>{ S.set.accent=b.dataset.v; save(); applyTheme(); renderSet(); }));
   const swBind = (id,key,restart) => $("#"+id).addEventListener("change",e=>{ S.set[key]=e.target.checked; save(); if(restart) newSession(sess?sess.mode:S.set.order); });
@@ -589,7 +644,7 @@ setInterval(()=>{ if(sess && sess.mode==="morning" && !sess.ended){ updateStatus
 
 applyTheme();
 newSession(S.set.order);
-window.__kit = {S, CARDS, choose:()=>choose(), sess:()=>sess, cur:()=>cur};
+window.__kit = {S, CARDS, selected, choose:()=>choose(), sess:()=>sess, cur:()=>cur};
 })();
 </script>
 </body></html>
