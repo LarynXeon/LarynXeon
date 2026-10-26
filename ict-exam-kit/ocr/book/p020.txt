@@ -1,0 +1,14 @@
+##PAGE pdf=020 printed=none
+# দ্বিতীয় অধ্যায়
+# কম্পিউটার রক্ষণাবেক্ষণ ও সাইবার নিরাপত্তা
+[স্ক্রিনশট: "Please Login" উইন্ডো (Username, Password, Remember Password, Login, Cancel বাটন); SECURITY লেখা ধাঁধার টুকরো (SPYWARE, UPDATE, VIRUS, SPAM, HACKER, IDENTITY, PHISHING, FIREWALL, INTERNET, PASSWORD); অক্ষরের ঘনকে লেখা IDENTIFY, ANTISPAM, SECURITY, PASSWORD, FIREWALL, ANTIVIRUS; "Security Tool" উইন্ডোতে "WARNING! 42 infections found!!!" সতর্কবার্তা, নিচে Remove all threats ও Continue unprotected বাটন; ছবির বাকি ছোট লেখা অস্পষ্ট]
+
+## এ অধ্যায় শেষে আমরা...
+- কম্পিউটার রক্ষণাবেক্ষণে সফটওয়্যারের গুরুত্ব ব্যাখ্যা করতে পারব;
+- Software uninstall এবং Software delete -এর পার্থক্য করতে পারব;
+- সাইবার ঝুঁকি ও তথ্যের নিরাপত্তা সম্পর্কে ব্যাখ্যা করতে পারব;
+- মানুষের জীবনে সাইবার অপরাধের প্রভাব ও সাইবার আক্রমণের শিকার হলে করণীয় সম্পর্কে ব্যাখ্যা করতে পারব;
+- অতিমাত্রায় ইন্টারনেট ব্যবহারের ফলাফল বিশ্লেষণ করতে পারব;
+- অতিমাত্রায় গেমস খেলার নেতিবাচক দিকগুলো ব্যাখ্যা করতে পারব;
+- সফটওয়্যার পাইরেসির বিষয়টি বর্ণনা করতে পারব;
+[?] (পৃষ্ঠার বামদিকে নিচে উল্লম্ব চিহ্ন, পাঠ্য পড়া যায়নি)

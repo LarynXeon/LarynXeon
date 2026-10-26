@@ -1,0 +1,15 @@
+##PAGE pdf=118 printed=১১৩
+সহজে শেখার জন্য পাইথন বেশ মজার একটি প্রোগ্রামিং ভাষা। এটি শিক্ষানবিশ-বান্ধব, এর একটি সাধারণ সিনট্যাক্স রয়েছে এবং এটি ওয়েব ডেভেলপমেন্ট, ডেটা সায়েন্স এবং অটোমেশনের মতো ক্ষেত্রসমূহে ব্যাপকভাবে ব্যবহৃত হয়।
+[চিত্র: Python logo (python™)]
+# পাইথনে প্রোগ্রামিংয়ের যাত্রা শুরু:
+পাইথন ভাষার নির্দেশ বা কোড লেখার জন্য প্রথমে প্রোগ্রামিং পরিবেশ তৈরির জন্য কিছু কাজ করতে হবে-
+- ১. পাইথন অ্যাপ্লিকেশন ডাউনলোড করে কম্পিউটারে ইনস্টল করতে হবে। এই লিংক থেকে পাইথন ডাউনলোড করা যায়।
+https://www.python.org/downloads/
+এরপর সেখান থেকে সবচেয়ে সাম্প্রতিক ভার্সন নিতে হবে।
+- ২. অ্যাপ্লিকেশন নামানো হয়ে গেলে এটি ইনস্টল করতে হবে। ইনস্টলের সময় নিচের ছবির মতো একটি উইন্ডো দেখতে পাবে-
+[স্ক্রিনশট: Python 3.12.7 (64-bit) Setup window — heading "Install Python 3.12.7 (64-bit)"; buttons/options "Install Now" (with description "Select Install Now to install Python with default settings, or choose Customize to enable or disable features"), "Customize installation" ("Choose location and features"); checkboxes "Use admin privileges when installing py.exe", "Add python.exe to PATH"; button "Cancel"; branding "python for windows"]
+এখন ইনস্টল উইন্ডোর নিচে থাকা অপশনগুলো ক্লিক করে টিক চিহ্ন দিয়ে দিব। তারপর Install Now অপশনে ক্লিক করব। এ সময় ইনস্টল হবার অনুমতি চাইলে সেটাও অনুমতি দিয়ে দিব।
+- ৩. এরপর আমাদের মেসেজ দেখাবে যে আমাদের সেটআপ সফল হয়েছে।
+- ৪. পাইথন আমাদের কম্পিউটারে যুক্ত হলো। কিন্তু আমাদের আরেকটি সফটওয়্যার এপ্লিকেশন লাগবে যেখানে আমরা আমাদের নির্দেশ লিখে কম্পিউটারকে বুঝিয়ে দিব। সেজন্য এই লিংকে যাই-https://thonny.org/ ; এই লিংক থেকে Thonny সফটওয়্যারটি নামিয়ে নেই ও ইনস্টল করে ফেলি।
+[স্ক্রিনশট: Thonny setup window — title "Setup - Thonny"; heading "Welcome to using Thonny!"; buttons "Next", "Cancel"; a code editor pane is visible on the left]
+ফর্মা-১৫, তথ্য ও যোগাযোগ প্রযুক্তি-৯ম শ্রেণি

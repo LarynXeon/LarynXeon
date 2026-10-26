@@ -1,0 +1,9 @@
+##PAGE pdf=083 printed=৭৮
+[স্ক্রিনশট: Adobe Photoshop উইন্ডোর শিরোনাম "Adobe Photoshop - [Practice @ 100% (RGB/8)]"; মেনু বার: File, Edit, Image, Layer, Select, Filter, View, Window, Help; ডানে Swatches ও Layers প্যানেল, Channels ট্যাবে RGB, Red, Green, Blue চ্যানেল; নিচের প্যানেলে "Practice"; বাকি লেখা অস্পষ্ট]
+- রুলারের নিচের পর্দায় ফটোশপের কাজ করতে হয়।
+- এ পর্দাটিকে শিল্পীর ছবি আঁকার ক্যানভাসের সঙ্গে তুলনা করা যেতে পারে। এই ক্যানভাসের বাম পাশে রয়েছে তুলি বা ব্রাশ এবং রং ও ছবি সম্পাদনা করার বিভিন্ন প্রকার টুল এবং ডান পাশে রয়েছে প্যালেট।
+# ফটোশপের টুলবক্স এবং প্যালেট পরিচিতি
+ফটোশপে কাজ করার জন্য কমবেশি ৬৯ প্রকার টুল রয়েছে। এ ছাড়াও রয়েছে অসংখ্য অপশন প্যালেট, ডায়ালগ বক্স ইত্যাদি। বিভিন্ন রকম টুলের সঙ্গে আবার বিভিন্ন রকম অপশন প্যালেট এবং ডায়ালগ বক্সের সম্পর্ক রয়েছে।
+ফটোশপের টুল বক্সে এ ছাড়াও রয়েছে তুলি বা ব্রাশের রং বা Foreground এবং ক্যানভাস বা Background-এর রং নিয়ন্ত্রণের আইকন, মনিটরের পর্দায় প্রদর্শন এলাকা নির্ধারণের আইকন, মাস্ক আইকন ইত্যাদি। পেন্সিল বা ব্রাশ টুল দিয়ে রেখা অঙ্কন করলে Foreground-এর রং তুলির রং হিসেবে কাজ করে।
+[স্ক্রিনশট: ফটোশপের টুলবক্স। বাম কলাম টুলের নাম: Marquee Tool, Lasso Tool, Crop Tool, Airbrush Tool, Rubber Stamp Tool, Eraser Tool, Blur Tool, Path Tool, Pen Tool, Notes Tool, Hand Tool, Foreground Color; ডান কলাম টুলের নাম: Move Tool, Magic Wand Tool, Slice Tool, Paintbrush Tool, History Brush Tool, Paint Bucket, Dodge Tool, Type Tool, Rectangle Tool, Eyedropper Tool, Zoom Tool, Background Color]
+- পর্দার ডান পাশে রয়েছে বিভিন্ন প্রকার প্যালেট। প্যালেটের উপরের ডান দিকে বিয়োগ চিহ্ন বা Minimize আইকন রয়েছে। এ বিয়োগ চিহ্ন বা Minimize

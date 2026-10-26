@@ -1,0 +1,762 @@
+{
+ "chapter": 1,
+ "mcqs": [
+  {
+   "slide": 3,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১",
+   "question": "একুশ শতকের সম্পদ কোনটি?",
+   "boards": "ঢা. বো. ’২৫; য. বো. ’২৪; আদমজী ক্যান্টনমেন্ট পাবলিক স্কুল, ঢাকা; ডা: খাস্তগীর সরকারি বালিকা উচ্চ বিদ্যালয়, চট্টগ্রাম",
+   "options": {
+    "A": "অর্থ",
+    "B": "কম্পিউটার",
+    "C": "জ্ঞান",
+    "D": "ইন্টারনেট"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 4,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২",
+   "question": "কোনটির কারণে মানুষ সম্পদ হয়ে উঠেছে?",
+   "boards": "রা. বো. ’২৩",
+   "options": {
+    "A": "আন্তর্জাতিকতা",
+    "B": "সৃজনশীলতা",
+    "C": "জ্ঞান",
+    "D": "সুনাগরিকত্ব"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 5,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩",
+   "question": "নিচের কোনটি Globalization এবং Internationalization ত্বরান্বিত হওয়ার কারণ?",
+   "boards": "চ. বো. ’২৫; ঢা. বো. ’২০; এ-মজিদ স্কুল এন্ড কলেজ, সিলেট",
+   "options": {
+    "A": "যোগাযোগ",
+    "B": "পারস্পরিক সহযোগিতা",
+    "C": "শিল্প বিপ্লব",
+    "D": "তথ্য ও যোগাযোগ প্রযুক্তি"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 6,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৪",
+   "question": "নতুন পৃথিবীর অলিখিত নিয়ম কোনটি?",
+   "boards": "য. বো. ’২৪; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা; বিন্দুবাসিনী সরকারি বালিকা উচ্চ বিদ্যালয়, ময়মনসিংহ",
+   "options": {
+    "A": "বিশ্বায়ন",
+    "B": "যোগাযোগ দক্ষতা",
+    "C": "সৃজনশীলতা",
+    "D": "আন্তর্জাতিকতা"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 7,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৫",
+   "question": "একুশ শতকের চ্যালেঞ্জ মোকাবিলা করে কোন সমাজ স্থান করে নিয়েছে?",
+   "boards": "য. বো. ’২৫",
+   "options": {
+    "A": "জ্ঞানভিত্তিক",
+    "B": "সমাজভিত্তিক",
+    "C": "মূল্যায়নভিত্তিক",
+    "D": "অর্থনীতিভিত্তিক"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 9,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৬",
+   "question": "আধুনিক কম্পিউটারের জনক কে?",
+   "boards": "ঢা. বো. ’২৫; য. বো. ’২৪",
+   "options": {
+    "A": "চার্লস ব্যাবেজ",
+    "B": "বিল গেটস",
+    "C": "মার্ক জাকারবার্গ",
+    "D": "স্টিভ জবস"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 10,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৭",
+   "question": "Charles Babbage এর জন্ম হয় কত সালে?",
+   "boards": "কু. বো. ’২৫",
+   "options": {
+    "A": "১৭৯১",
+    "B": "১৮১০",
+    "C": "১৮৫২",
+    "D": "১৮৭১"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 11,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৮",
+   "question": "প্রোগ্রামিং ধারণার প্রবর্তক হিসেবে কাকে সম্মানিত করা হয়?",
+   "boards": "য. বো. ’২৫; রা. বো. ’২৪; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা; সরকারি পি.এন. বালিকা উচ্চ বিদ্যালয়, রাজশাহী",
+   "options": {
+    "A": "লর্ড বায়রন",
+    "B": "চার্লস ব্যাবেজ",
+    "C": "অ্যাডা লাভলেস",
+    "D": "স্টিভ ওজনিয়াক"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 5,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 12,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৯",
+   "question": "কম্পিউটারের প্রথম প্রোগ্রামিং ধারণা কে প্রবর্তন করেন?",
+   "boards": "দি. বো. ’২৩; সকল বোর্ড ২০১৮; সরকারি জুবিলী উচ্চ বিদ্যালয়, সুনামগঞ্জ; বর্ডার গার্ড পাবলিক স্কুল এন্ড কলেজ, সিলেট",
+   "options": {
+    "A": "চার্লস ব্যাবেজ",
+    "B": "অ্যাডা লাভলেস",
+    "C": "জেমস ক্লার্ক ম্যাক্সওয়েল",
+    "D": "বিল গেটস"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 13,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১০",
+   "question": "১৮৪২ সালে চার্লস ব্যাবেজ কোন বিশ্ববিদ্যালয়ে বক্তৃতা দেন?",
+   "boards": "য. বো. ’২৩; আদমজী ক্যান্টনমেন্ট পাবলিক স্কুল, ঢাকা",
+   "options": {
+    "A": "হার্ভার্ড বিশ্ববিদ্যালয়ে",
+    "B": "ক্যামব্রিজ বিশ্ববিদ্যালয়ে",
+    "C": "তুরিন বিশ্ববিদ্যালয়ে",
+    "D": "অক্সফোর্ড বিশ্ববিদ্যালয়ে"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 14,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১১",
+   "question": "অ্যাডা লাভলেস [black redaction box hides a word] প্রোগ্রামিংয়ের কোন ধারণাটি প্রকাশ করেছিলেন?",
+   "boards": "কু. বো. ’২৫; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "লুপ তৈরি",
+    "B": "ফ্লো-চার্ট",
+    "C": "সিউডো-কোড",
+    "D": "অ্যালগরিদম"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Part of the question stem is blacked out (redaction blob between 'লাভলেস' and 'প্রোগ্রামিংয়ের'); the hidden word is not readable."
+  },
+  {
+   "slide": 15,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১২",
+   "question": "বিজ্ঞানী জেমস ক্লার্ক ম্যাক্সওয়েল কোন ধরনের তরঙ্গ ব্যবহার করে এক স্থান থেকে অন্য স্থানে তথ্য প্রেরণে সফল হন?",
+   "boards": "য. বো. ’২৪; বরিশাল জিলা স্কুল",
+   "options": {
+    "A": "শব্দ",
+    "B": "বেতার",
+    "C": "তড়িৎ",
+    "D": "তড়িৎচৌম্বক"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Yellow spiral doodle on the slide (not text). Answer marker is the red box on C."
+  },
+  {
+   "slide": 16,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৩",
+   "question": "বেতার তরঙ্গ আবিষ্কারক কে?",
+   "boards": "কু. বো. ’২০",
+   "options": {
+    "A": "গুগলিয়েলমো মার্কনি",
+    "B": "জেমস ক্লার্ক ম্যাক্সওয়েল",
+    "C": "চার্লস ব্যাবেজ",
+    "D": "অ্যাডা লাভলেস"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 17,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৪",
+   "question": "IBM এর পূর্ণরূপ কী?",
+   "boards": "দি. বো. ’২৪; কুমিল্লা জিলা স্কুল",
+   "options": {
+    "A": "Internet Business Machine",
+    "B": "Internal Business Machine",
+    "C": "Information Business Machine",
+    "D": "International Business Machine"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 18,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৫",
+   "question": "মাইক্রোপ্রসেসর কত সালে আবিষ্কৃত হয়?",
+   "boards": "ঢা. বো., দি. বো. ’২৫; য. বো. ’২০; সকল বোর্ড ২০১৭; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা; আদমজী ক্যান্টনমেন্ট পাবলিক স্কুল, ঢাকা; শহীদ বীর উত্তম লে. আনোয়ার গার্লস কলেজ, ঢাকা",
+   "options": {
+    "A": "১৯৫১",
+    "B": "১৯৬১",
+    "C": "১৯৭১",
+    "D": "১৯৮১"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 19,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৬",
+   "question": "কোন Protocol ব্যবহার করে আরপানেট (Arpanet) এর জন্ম হয়?",
+   "boards": "দি. বো. ’২৪",
+   "options": {
+    "A": "http protocol",
+    "B": "TCP/IP protocol",
+    "C": "Internet protocol",
+    "D": "Server protocol"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 20,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৭",
+   "question": "আরপানেট বিকশিত হয়ে কোনটি তৈরি হয়?",
+   "boards": "কু. বো. ’২৫",
+   "options": {
+    "A": "ওয়েব",
+    "B": "ইন্টারনেট",
+    "C": "ইন্ট্রানেট",
+    "D": "লোকাল নেট"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 21,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৮",
+   "question": "আরপানেট ইলেকট্রনিক মাধ্যমে পত্রালাপের সূচনা করেন কে?",
+   "boards": "ম. বো. ’২৫; ময়মনসিংহ জিলা স্কুল",
+   "options": {
+    "A": "Steve Jobs",
+    "B": "James Clerk Maxwell",
+    "C": "Raymond Samuel Tomlinson",
+    "D": "Tim Berners Lee"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 22,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৯",
+   "question": "সর্বপ্রথম ইন্টারনেট প্রটোকল ব্যবহার করেন কে?",
+   "boards": "মা. বো. ’২০",
+   "options": {
+    "A": "গুগলিয়েলমো মার্কনি",
+    "B": "মার্ক জাকারবার্গ",
+    "C": "স্টিভ জবস",
+    "D": "স্যামুয়েল টমলিনসন"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 23,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২০",
+   "question": "কে প্রথম ই-মেইল পদ্ধতি চালু করেন?",
+   "boards": "চ. বো. ’২৫, ’২৪; দি. বো. ’২৫; শহীদ বীর উত্তম লে. আনোয়ার গার্লস কলেজ, ঢাকা; কুমিল্লা জিলা স্কুল",
+   "options": {
+    "A": "জগদীশ চন্দ্র বসু",
+    "B": "রেমন্ড স্যামুয়েল টমলিনসন",
+    "C": "উইলিয়াম হেনরি বিল গেটস",
+    "D": "মার্ক জাকারবার্গ"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 24,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২১",
+   "question": "HTTP এর পূর্ণরূপ কী?",
+   "boards": "কু. বো. ’২৩; ঢ. বো., সি. বো. ’২৫; সকল বোর্ড ২০১৭; ডাঃ খাস্তগীর সরকারি বালিকা উচ্চ বিদ্যালয়, চট্টগ্রাম; হবিগঞ্জ সরকারি বালিকা উচ্চ বিদ্যালয়",
+   "options": {
+    "A": "Hyper Text Transfer Protocol",
+    "B": "Hyper Text Terminate Protocol",
+    "C": "Hyper Text Type Program",
+    "D": "Hyper Thought Markup Language"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "Secure (yellow arrow from 'HTTP' in the question pointing to this word)",
+   "remarks": "A yellow arrow drawn over the board tag partly obscures the 'ঢ. বো.' text, so that board name may be read as 'চ.' or 'ঢ.'."
+  },
+  {
+   "slide": 25,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২২",
+   "question": "www এর জনক কে?",
+   "boards": "ঢা. বো. ’২৫, ’২৪; সি. বো. ’২৩; ঢাকা রেসিডেনসিয়াল মডেল কলেজ; আইডিয়াল স্কুল এন্ড কলেজ, মতিঝিল, ঢাকা",
+   "options": {
+    "A": "Bill Gates",
+    "B": "Sir Timothy John Berners Lee",
+    "C": "Mark Zuckerberg",
+    "D": "Raymond Samuel Tomlinson"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 26,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৩",
+   "question": "ইন্টারনেট ব্যবহার করে শিক্ষাদানকে কী বলে?",
+   "boards": "দি. বো. ’২৩",
+   "options": {
+    "A": "ডিসটেন্স লার্নিং",
+    "B": "ই-লার্নিং",
+    "C": "রিমোট লার্নিং",
+    "D": "ডিজিটাল লার্নিং"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 27,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৪",
+   "question": "সুমন টেলিভিশনে কৃষি সংক্রান্ত বিভিন্ন ধরনের অনুষ্ঠান দেখে, এ ক্ষেত্রে সুমন কীভাবে শিক্ষা অর্জন করছে?",
+   "boards": "সকল বোর্ড ২০১৮",
+   "options": {
+    "A": "ভার্চুয়াল ক্লাব",
+    "B": "ই-লার্নিং",
+    "C": "ই-ক্লাস",
+    "D": "ই-টকিং"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 28,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৫",
+   "question": "শাসন ব্যবস্থায় ও প্রক্রিয়ায় ইলেকট্রনিক বা ডিজিটাল পদ্ধতির প্রয়োগকে কী বলা হয়?",
+   "boards": "ম. বো. ’২৫; ধানমন্ডি গভঃ বয়েজ হাই স্কুল, ঢাকা; নবাব ফয়জুন্নেসা সরকারি বালিকা উচ্চ বিদ্যালয়, কুমিল্লা",
+   "options": {
+    "A": "ই-লার্নিং",
+    "B": "ই-গভর্ন্যান্স",
+    "C": "ই-ম্যানেজমেন্ট",
+    "D": "ই-কমার্স"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 29,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৬",
+   "question": "ইলেকট্রনিকস ব্যবস্থার প্রচলন হওয়ায় আমাদের দেশে কোনটি ঘটেছে?",
+   "boards": "ম. বো. ’২৩",
+   "options": {
+    "A": "সুশাসনের পথে বাধা",
+    "B": "হয়রানি ও বিড়ম্বনার অবসান",
+    "C": "সমৃদ্ধ জীবনযাপন",
+    "D": "শিক্ষার সুযোগ বৃদ্ধি"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 30,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৭",
+   "question": "ইলেকট্রনিক পদ্ধতিতে সেবা প্রদানকে কী বলে?",
+   "boards": "রা. বো. ’২৫; সি. বো. ’২৪",
+   "options": {
+    "A": "ই-সার্ভিস",
+    "B": "ই-কমার্স",
+    "C": "ই-লার্নিং",
+    "D": "ই-গভর্ন্যান্স"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": ""
+  },
+  {
+   "slide": 31,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৮",
+   "question": "আখ চাষিদের জন্য কোন সেবা প্রযোজ্য?",
+   "boards": "য. বো. ’২৪",
+   "options": {
+    "A": "ই-পর্চা",
+    "B": "ই-টিকেটিং",
+    "C": "ই-এমটিএস",
+    "D": "ই-পুর্জি"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "চিনিকল",
+   "remarks": "Yellow pen slash on the word আখ with 'চিনিকল' written beneath (annotation, not an answer marker)."
+  },
+  {
+   "slide": 32,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২৯",
+   "question": "কোন পদ্ধতির মাধ্যমে নিরাপদে, দ্রুত ও কম খরচে টাকা পাঠানো যায়?",
+   "boards": "চ. বো. ’২৫",
+   "options": {
+    "A": "EMTS",
+    "B": "COD",
+    "C": "BSA",
+    "D": "CIH"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 33,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩০",
+   "question": "বর্তমানে দেশের সকল জমির রেকর্ডের অনুলিপি অনলাইনে সংগ্রহ করার ই-সার্ভিসের নাম কী?",
+   "boards": "ঢা. বো., য. বো. ’২৪; ঢাকা রেসিডেনসিয়াল মডেল কলেজ; আইডিয়াল স্কুল এন্ড কলেজ, মতিঝিল, ঢাকা; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা; বিএএফ শাহীন কলেজ, কুর্মিটোলা, ঢাকা; মিরপুর ক্যান্ট. পাবলিক স্কুল ও কলেজ, ঢাকা; শহীদ পুলিশ স্মৃতি কলেজ, ঢাকা; আর্মড পুলিশ ব্যাটালিয়ন পাবলিক স্কুল ও কলেজ, বগুড়া; রংপুর সরকারি বালিকা উচ্চ বিদ্যালয়, রংপুর",
+   "options": {
+    "A": "ই-পর্চা",
+    "B": "ই-পুর্জি",
+    "C": "ই-এমটিএস",
+    "D": "ই-কমার্স"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 34,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩১",
+   "question": "একসময় দেশের সকল জমির রেকর্ডের অনুলিপি সংগ্রহ করতে—\n(i) অনেক সময় লাগত (ii) যাতায়াত খরচ হতো (iii) হয়রানির শিকার হতে হতো\nনিচের কোনটি সঠিক?",
+   "boards": "সি. বো. ’২৩",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 35,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩২",
+   "question": "ইন্টারনেটে পণ্য কেনাবেচার পদ্ধতির নাম কী?",
+   "boards": "ঢা. বো. ’২৫; সকল বোর্ড ২০১৮; নবাব ফয়জুন্নেসা সরকারি বালিকা উচ্চ বিদ্যালয়, কুমিল্লা",
+   "options": {
+    "A": "ই-পর্চা",
+    "B": "ই-কমার্স",
+    "C": "ই-এমটিএস",
+    "D": "ই-পুর্জি"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 36,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩৩",
+   "question": "কোনো প্রতিষ্ঠানে ই-কমার্স চালু করতে কোনটির প্রয়োজন?",
+   "boards": "ঢা. বো. ’২০",
+   "options": {
+    "A": "ই-গভর্ন্যান্স",
+    "B": "ওয়েবসাইট",
+    "C": "ট্রেড লাইসেন্স",
+    "D": "স্মার্ট কার্ড"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 37,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩৪",
+   "question": "নতুন নতুন কর্মক্ষেত্র সৃষ্টি হচ্ছে কিসের কারণে?",
+   "boards": "ঢা. বো. ’২৩",
+   "options": {
+    "A": "শিল্প কারখানার",
+    "B": "আইসিটি শিক্ষার",
+    "C": "উন্নত চাষাবাদের",
+    "D": "ব্যবসা বাণিজ্যের"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 38,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩৫",
+   "question": "কোনটি সামাজিক যোগাযোগের মাধ্যম নয়?",
+   "boards": "রা. বো. ’২৫",
+   "options": {
+    "A": "টুইটার",
+    "B": "ফেসবুক",
+    "C": "গুগল",
+    "D": "ইন্সটাগ্রাম"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "সার্চ ইঞ্জিন",
+   "remarks": "Handwritten yellow note with arrow pointing to C; handwriting read as 'সার্চ ইঞ্জিন' (uncertain reading)."
+  },
+  {
+   "slide": 39,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩৬",
+   "question": "নিচের কোনটিকে মাইক্রোব্লগিংয়ের ওয়েবসাইট বলা হয়?",
+   "boards": "ঢা. বো. ’২৪; য. বো. ’২৫; দি. বো. ’২৩; ধানমন্ডি গভঃ বয়েজ হাই স্কুল, ঢাকা; নবাব ফয়জুন্নেসা সরকারি বালিকা উচ্চ বিদ্যালয়, কুমিল্লা",
+   "options": {
+    "A": "টুইটার বা এক্স",
+    "B": "ফেসবুক",
+    "C": "ইন্সটাগ্রাম",
+    "D": "লিংকডইন"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 40,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩৭",
+   "question": "টুইট (Tweet) কোনটির সাথে সম্পর্কযুক্ত?",
+   "boards": "সি. বো. ’২৪",
+   "options": {
+    "A": "ফেসবুক",
+    "B": "টুইটার বা এক্স",
+    "C": "গুগল",
+    "D": "ইয়াহু"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "280 -> characters",
+   "remarks": "Handwritten yellow note '280 -> characters' (annotation)."
+  }
+ ],
+ "other_slides": [
+  {
+   "slide": 8,
+   "type": "note",
+   "style": null,
+   "chapter_hint": null,
+   "qno": null,
+   "question": null,
+   "boards": null,
+   "options": null,
+   "answer": null,
+   "answer_confidence": null,
+   "stars": 0,
+   "handwritten": "কম্পিউটার → চার্লস ব্যাবেজ\nপ্রোগ্রামিং → অ্যাডা লাভলেস\nতড়িৎ চুম্বকীয় বল → ম্যাক্সওয়েল\nবেতার তরঙ্গ → মার্কনি\nArpanet/e-mail → টমলিনসন\nApple → স্টিভ জবস\nMicrosoft → Bill Gates\nFacebook → মার্ক জাকারবার্গ",
+   "remarks": "Handwritten-only slide (list of inventors/pioneers). Some Bengali handwriting is uncertain, especially the left-hand terms in the 2nd and 3rd lines and the spelling of the surnames."
+  }
+ ]
+}

@@ -1,0 +1,40 @@
+##PAGE pdf=131 printed=১২৬
+ব্যবহারিক সমস্যা # ৮ : ইংরেজি ছোটো হাতের কোনো অক্ষর vowel না consonant তা জানার জন্য একটি প্রোগ্রাম লেখো।
+সমাধান: ইনপুট হিসাবে ইংরেজি ছোটো হাতের কোনো অক্ষর টাইপ করা হবে। নিচে প্রোগ্রামটির কোড দেওয়া হলো।
+    char = input('Enter the letter: ')
+    match char:
+            case "a" :
+                    print(char, ' is a vowel ')
+            case "e" :
+                    print(char, ' is a vowel ')
+            case "i" :
+                    print(char, ' is a vowel ')
+            case "o" :
+                    print(char, ' is a vowel ')
+            case "u" :
+                    print(char, ' is a vowel ')
+            case _:
+    print(char, ' is a consonant')
+প্রোগ্রামটি রান করে প্রাপ্ত নমুনা ফলাফল-
+    Enter the letter: a
+    a is a vowel
+    Enter the letter: d
+    d is a consonants
+বিকল্প পদ্ধতির সমাধান: উপরের প্রোগ্রামটিকে ইনপুট হিসেবে শুধুমাত্র ইংরেজি ছোটো হাতের কোনো অক্ষর টাইপ করা হলে ফলাফল দেখাবে। নিচের প্রোগ্রামটিতে ইংরেজি ছোটো হাতের বা বড়ো হাতের যে কোনো অক্ষর টাইপ করা হলে ফলাফল দেখাবে। নিচে প্রোগ্রামটির কোড দেওয়া হলো।
+    char = input('Enter the letter: ')
+    vowels = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
+    if char in vowels:
+        print(char, ' is a vowel')
+    else :
+        print(char, ' is a consonant')
+ব্যবহারিক সমস্যা # ৯ : তিনটি পূর্ণ সংখ্যার মধ্য থেকে বড় সংখ্যাটি বের করার জন্য একটি প্রোগ্রাম লেখো।
+সমাধান : নিচে প্রোগ্রামটির কোড দেওয়া হলো।
+    num1 = int(input('Enter integer number 1: '))
+    num2 = int(input('Enter integer number 2: '))
+    num3 = int(input('Enter integer number 3: '))
+    if (num1 >= num2) and (num1 >= num3):
+        print(num1, 'is the largest number')
+    elif (num2 >= num1) and (num2 >= num3):
+        print(num2, 'is the largest number')
+    else :
+        print(num3, 'is the largest number')

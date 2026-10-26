@@ -1,0 +1,1606 @@
+{
+ "chapter": 2,
+ "mcqs": [
+  {
+   "slide": 41,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটার রক্ষণাবেক্ষণ কত প্রকারের হতে পারে?",
+   "boards": null,
+   "options": {
+    "A": "১",
+    "B": "২",
+    "C": "৩",
+    "D": "৪"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (খ); yellow pen check mark on (খ) (annotation)."
+  },
+  {
+   "slide": 42,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "তথ্য ও যোগাযোগ প্রযুক্তির ক্ষেত্রে মূলযন্ত্রগুলো মূলত কি নির্ভর?",
+   "boards": null,
+   "options": {
+    "A": "ইউএসবি পোর্ট ও পেনড্রাইভ",
+    "B": "প্রসেসর ও সফটওয়্যার",
+    "C": "ইউএসবি পোর্ট ও সফটওয়্যার",
+    "D": "প্রসেসর ও পেনড্রাইভ"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (খ); pen check/underline on (খ) (annotation)."
+  },
+  {
+   "slide": 43,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ইন্টারনেট ব্যবহার করে সহজেই কোনটি আপডেট করা যায়?",
+   "boards": "ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "র‍্যাম",
+    "B": "অপারেটিং সিস্টেম",
+    "C": "রম",
+    "D": "প্রসেসর"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (খ); pen check on (খ) (annotation)."
+  },
+  {
+   "slide": 44,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "উইন্ডোজ অপারেটিং সিস্টেম কোন কোম্পানির?",
+   "boards": "মতিঝিল সরকারি বালক উচ্চ বিদ্যালয়, ঢাকা",
+   "options": {
+    "A": "মাইক্রোসফট",
+    "B": "অ্যাপল",
+    "C": "ওরাকল",
+    "D": "গুগল"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); pen check on (ক) (annotation)."
+  },
+  {
+   "slide": 45,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটার ধীরগতির হয়ে গেলে, কীভাবে তা স্বাভাবিক করা যায়?",
+   "boards": "বরিশাল সরকারি বালিকা উচ্চ বিদ্যালয়, বরিশাল",
+   "options": {
+    "A": "অপারেটিং সিস্টেম বন্ধ করে",
+    "B": "অপারেটিং সিস্টেম বারবার পরিবর্তন করে",
+    "C": "অপারেটিং সিস্টেম আপডেট করে",
+    "D": "ইন্টারনেট ব্যবহার বৃদ্ধি করে"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (গ); pen check on (গ) (annotation)."
+  },
+  {
+   "slide": 46,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটার সচল ও গতিশীল রাখতে কী করা প্রয়োজন?",
+   "boards": "ঢা.বো.'২৩",
+   "options": {
+    "A": "রেজিস্ট্রি ক্লিনআপ সফটওয়্যার ব্যবহার করতে হবে",
+    "B": "ইন্টারনেট সংযোগ দিতে হবে",
+    "C": "টেম্পোরারি ফাইল সংরক্ষণ করতে হবে",
+    "D": "কম্পিউটার পরিবর্তন করতে হবে"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); check mark and underline on (ক) (annotation)."
+  },
+  {
+   "slide": 47,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ইন্টারনেট ব্যবহারের ফলে কুকিজ কোথায় জমা হয়?",
+   "boards": "ব. বো. ২৪",
+   "options": {
+    "A": "ক্যাশ মেমরিতে",
+    "B": "র‍্যামে",
+    "C": "রমে",
+    "D": "হার্ডডিস্কে"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); yellow circle and check on (ক) (annotation)."
+  },
+  {
+   "slide": 48,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ইন্টারনেট ব্যবহার করলে ইন্টারনেট ব্রাউজারের ক্যাশ মেমোরিতে কী জমা হয়?",
+   "boards": null,
+   "options": {
+    "A": "ফাইল",
+    "B": "কুকিজ ও টেম্পোরারি ফাইল",
+    "C": "ডাটা ফাইল",
+    "D": "শর্টকাট ফাইল"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (খ)."
+  },
+  {
+   "slide": 49,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "'কুকিজ' থাকে-",
+   "boards": "মাধ্যমিক ও উচ্চ মাধ্যমিক শিক্ষা বোর্ড, যশোর",
+   "options": {
+    "A": "ব্রাউজারে",
+    "B": "ওয়েবসাইটে",
+    "C": "সার্চ ইঞ্জিনে",
+    "D": "অপারেটিং সিস্টেমে"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); check mark on (ক) (annotation)."
+  },
+  {
+   "slide": 50,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "টেম্পোরারি ফাইল তৈরির ফলে কী হয়?",
+   "boards": "সেন্ট জোসেফ উচ্চ মাধ্যমিক বিদ্যালয়, ঢাকা",
+   "options": {
+    "A": "কম্পিউটার দ্রুত গতির হয়",
+    "B": "কম্পিউটারের স্থায়িত্ব বেড়ে যায়",
+    "C": "কম্পিউটার ধীর গতির হয়",
+    "D": "কম্পিউটারের ওয়ালপেপার সুন্দর হয়"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (গ); check mark on (গ) (annotation)."
+  },
+  {
+   "slide": 51,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "তুমি কতবার তোমার কম্পিউটারের সংরক্ষিত তথ্য বিন্যাস করবে?",
+   "boards": "য.বো.১৯",
+   "options": {
+    "A": "সপ্তাহে একবার",
+    "B": "দিনে একবার",
+    "C": "মাসে একবার",
+    "D": "বছরে একবার"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); check mark on (ক) (annotation)."
+  },
+  {
+   "slide": 52,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "প্রত্যেকবার কম্পিউটার ব্যবহার করার সময় নিচে কোনটি তৈরি হয়?",
+   "boards": "ইবনে তাইমিয়া স্কুল এন্ড কলেজ, কুমিল্লা; বগুড়া ক্যান্টনমেন্ট পাবলিক স্কুল ও কলেজ",
+   "options": {
+    "A": "বেশ কিছু doc ফাইল",
+    "B": "বেশ কিছু temp ফাইল",
+    "C": "VIRUS",
+    "D": "বেশ কিছু HTML ফাইল"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (খ); yellow circle around 'temp' and check on (খ) (annotation)."
+  },
+  {
+   "slide": 53,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনটি কম্পিউটারের জন্য ঝুঁকিপূর্ণ?",
+   "boards": "বি এ এফ শাহীন কলেজ, ঢাকা",
+   "options": {
+    "A": "স্পাইওয়্যার",
+    "B": "এন্টি স্পাইওয়্যার",
+    "C": "হার্ডওয়্যার",
+    "D": "এন্টি ভাইরাস"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); yellow circles drawn around all four options and check on (ক) (annotation)."
+  },
+  {
+   "slide": 54,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ডিস্ক ক্লিনআপ এর কাজ কী?",
+   "boards": "ম.বো ২৪",
+   "options": {
+    "A": "মেমোরির জায়গা বাড়ানো",
+    "B": "কম্পিউটারের কাজের গতি স্থিতিশীল করা",
+    "C": "কম্পিউটারের গতি বাড়ানো",
+    "D": "ভাইরাস প্রতিরোধ করা"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (গ) as printed; option (খ) reads closer to the usual meaning of disk cleanup, but the on-slide marker was followed. Check on (গ) (annotation)."
+  },
+  {
+   "slide": 55,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারের কাজ করার গতি বজায় রাখার জন্য কোনটি ব্যবহার করা হয়?",
+   "boards": "সম্মিলিত বো. '২০",
+   "options": {
+    "A": "ডিস্ক ক্লিনআপ ও ডিস্ক ডিফ্র্যাগমেন্টার",
+    "B": "এন্টি ভাইরাস ইনস্টল",
+    "C": "টেম্পোরারি ফাইল সংরক্ষণ",
+    "D": "ক্যাশ মেমোরির ফাইল সংরক্ষণ"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); check mark on (ক) (annotation)."
+  },
+  {
+   "slide": 56,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "হার্ডডিস্কের ধারণ ক্ষমতা বাড়ানোর জন্য কী প্রয়োজন?",
+   "boards": "য.বো. ১৯",
+   "options": {
+    "A": "ডিস্ক ডিলিটআপ",
+    "B": "ডিস্ক রিডআপ",
+    "C": "ডিস্ক রিমুভার",
+    "D": "ডিস্ক ক্লিনআপ"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ঘ); check mark on (ঘ) (annotation)."
+  },
+  {
+   "slide": 57,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "অপারেটিং সিস্টেমের সাথে যুক্ত থাকে কোনটি?",
+   "boards": "ঢাকা রেসিডেনসিয়াল মডেল কলেজ, ঢাকা",
+   "options": {
+    "A": "ডিস্ক রিমুভার",
+    "B": "ডিস্ক এডিটর",
+    "C": "ডিস্ক ডিফ্র্যাগমেন্টার",
+    "D": "ডিস্ক রিডার"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (গ); check mark on (গ) (annotation)."
+  },
+  {
+   "slide": 58,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "হার্ডডিস্কে ফাইলগুলো সাজানোর জন্য কোনটি ব্যবহৃত হয়?",
+   "boards": "সেন্ট জোসেফ উচ্চ মাধ্যমিক বিদ্যালয়, ঢাকা",
+   "options": {
+    "A": "ডিস্ক অ্যারেঞ্জার",
+    "B": "ডিস্ক ইরেজার",
+    "C": "ডিস্ক ডিফ্র্যাগমেন্টার",
+    "D": "রেজিস্ট্রি ক্লিনআপ"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (গ); check mark on (গ) (annotation)."
+  },
+  {
+   "slide": 59,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ইলেকট্রনিক্স (আইসিটি) যন্ত্রগুলো কিসের মাধ্যমে পরিচালিত হয়?",
+   "boards": "সম্মিলিত বো.১৮",
+   "options": {
+    "A": "সফটওয়্যার",
+    "B": "প্রসেসর",
+    "C": "হার্ডওয়্যার",
+    "D": "ডাটা"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); check mark on (ক) (annotation)."
+  },
+  {
+   "slide": 60,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "আইসিটি যন্ত্রে সফটওয়্যারগুলো ইনস্টল করা হয় কিসের উদ্দেশ্যে?",
+   "boards": "আদমজী ক্যান্টনমেন্ট পাবলিক স্কুল, ঢাকা",
+   "options": {
+    "A": "ব্যবহারের উদ্দেশ্যে",
+    "B": "সংরক্ষণের উদ্দেশ্যে",
+    "C": "বিক্রয়ের উদ্দেশ্যে",
+    "D": "প্রদর্শনের উদ্দেশ্যে"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Answer by white dot at option (ক); check mark on (ক) (annotation)."
+  },
+  {
+   "slide": 61,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারে সর্বপ্রথম কোন সফটওয়্যার ইনস্টল করতে হয়?",
+   "boards": "ঢা বো: ২৩",
+   "options": {
+    "A": "অ্যাপ্লিকেশন প্রোগ্রাম",
+    "B": "অপারেটিং সিস্টেম",
+    "C": "অফিস সফটওয়্যার",
+    "D": "এন্টিভাইরাস"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow pen tick also on (খ)."
+  },
+  {
+   "slide": 62,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোন সফটওয়্যার ইনস্টল করতে বিশেষ দক্ষতার প্রয়োজন হয়?",
+   "boards": "দি.বো'২৩",
+   "options": {
+    "A": "কাস্টমাইজ সফটওয়্যার",
+    "B": "প্যাকেজ সফটওয়্যার",
+    "C": "গ্রুপ সফটওয়্যার",
+    "D": "অপারেটিং সিস্টেম সফটওয়্যার"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Yellow pen slash near (ঘ) is a teacher annotation."
+  },
+  {
+   "slide": 63,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "জরুরি কিছু কাজের কথা লেখা থাকে কোন ফাইলে?",
+   "boards": "বি এ এফ শাহীন কলেজ, ঢাকা; ক্যান্টনমেন্ট পাবলিক স্কুল ও কলেজ, রংপুর",
+   "options": {
+    "A": "Autorun",
+    "B": "Read me",
+    "C": "Auto Exe",
+    "D": "Restart"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow pen marks on (খ) and a circle around Read me are teacher annotations."
+  },
+  {
+   "slide": 64,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ডিজিটাল কপির অপর নাম কী?",
+   "boards": "বীরশ্রেষ্ঠ নূর মোহাম্মদ পাবলিক কলেজ, ঢাকা",
+   "options": {
+    "A": "সফট কপি",
+    "B": "ডিজিট কপি",
+    "C": "হার্ড কপি",
+    "D": "প্রোগ্রামিং"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Yellow pen tick on (ক) is a teacher annotation."
+  },
+  {
+   "slide": 65,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "CD-এর পূর্ণরূপ কী?",
+   "boards": "সরকারি মুসলিম হাই স্কুল, চট্টগ্রাম",
+   "options": {
+    "A": "Computer disc",
+    "B": "Compact Disc",
+    "C": "Compact Drum",
+    "D": "Computer Drum"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow pen marks and an ellipse around Compact Disc are teacher annotations."
+  },
+  {
+   "slide": 66,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "DVD এর পূর্ণরূপ কী?",
+   "boards": "বি এ এফ শাহীন কলেজ, ঢাকা",
+   "options": {
+    "A": "Digital Video Drive",
+    "B": "Digital Video Disc",
+    "C": "Driver video Disc",
+    "D": "Digital versatile Drum"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow pen crosses on other options are teacher annotations."
+  },
+  {
+   "slide": 67,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "Auto Run প্রোগ্রামের কাজ কী?",
+   "boards": "ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা; সরকারি পি. এন. বালিকা উচ্চ বিদ্যালয়, রাজশাহী; কাদিরাবাদ ক্যান্টনমেন্ট পাবলিক স্কুল, নাটোর; বর্ডার গার্ড পাবলিক হাই স্কুল, শ্রীমঙ্গল",
+   "options": {
+    "A": "স্বয়ংক্রিয়ভাবে সিডি, ডিভিডি রান করানো",
+    "B": "স্বয়ংক্রিয়ভাবে কম্পিউটার রান করানো",
+    "C": "কিছু জরুরি তথ্য সংরক্ষণ",
+    "D": "তথ্য ডিজিট করা"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Yellow pen marks on (ক) are teacher annotations."
+  },
+  {
+   "slide": 68,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "software installation এর পর কি করতে হবে?",
+   "boards": "আদমজী ক্যান্টনমেন্ট পাবলিক স্কুল, ঢাকা",
+   "options": {
+    "A": "Uninstall",
+    "B": "Finish",
+    "C": "Restart",
+    "D": "Delete"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot sits between option rows (গ) and (ঘ) but is closest to (গ); yellow pen tick is also on (গ). Question stem has white highlight box around software installation."
+  },
+  {
+   "slide": 69,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার আনইনস্টল করতে কোন সফটওয়্যারের সাহায্য প্রয়োজন?",
+   "boards": "ম.বো.২৩",
+   "options": {
+    "A": "অপারেটিং সিস্টেম",
+    "B": "ব্রাউজার সফটওয়্যার",
+    "C": "এপ্লিকেশন সফটওয়্যারঘ",
+    "D": "কাস্টমাইজ সফটওয়্যার"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Option (গ) text is printed as এপ্লিকেশন সফটওয়্যারঘ (apparent typo in source, copied as shown). Yellow pen marks are teacher annotations."
+  },
+  {
+   "slide": 70,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "স্মার্ট ফোন থেকে সফটওয়্যার আনইনস্টল করতে সেটিংস থেকে কী সিলেক্ট করতে হয়?",
+   "boards": "সামসুল হক খান স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "অ্যাকাউন্ট",
+    "B": "ডিসপ্লে",
+    "C": "সিকিউরিটি",
+    "D": "অ্যাপ্লিকেশন"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Yellow ellipse around অ্যাপ্লিকেশন and a cross on the (ঘ) letter are teacher annotations."
+  },
+  {
+   "slide": 71,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোন অপারেটিং সিস্টেম যন্ত্র থেকে সফটওয়্যার আনইনস্টল খুব সহজ?",
+   "boards": "সামসুল হক খান স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "উইন্ডোজ",
+    "B": "ম্যাক",
+    "C": "অ্যানড্রয়েড",
+    "D": "উবুন্টু"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (গ). Yellow pen tick on (গ) is a teacher annotation."
+  },
+  {
+   "slide": 72,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনো সফটওয়্যার আনইনস্টল করতে প্রথমে কোথায় যেতে হবে?",
+   "boards": "কু.বো.২৪",
+   "options": {
+    "A": "স্টার্ট বাটন থেকে কন্ট্রোল প্যানেল",
+    "B": "ডাবল ক্লিক করে অ্যাড অর রিমুভ",
+    "C": "নির্ধারিত ড্রাইভ থেকে সফটওয়্যারে",
+    "D": "'Windows+ r চেপে Run Command"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Yellow arc and tick are teacher annotations."
+  },
+  {
+   "slide": 73,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার আনইনস্টলেশনের শুরুতে কোন বাটনে ক্লিক করতে হয়?",
+   "boards": "গভঃ ল্যাবরেটরী হাই স্কুল, খুলনা",
+   "options": {
+    "A": "সাটডাউন বাটন",
+    "B": "স্টার্ট বাটন",
+    "C": "লগ অফ",
+    "D": "রান"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow tick on (খ) is a teacher annotation."
+  },
+  {
+   "slide": 74,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনো সফটওয়্যার আনইনস্টল করতে প্রথমে কোথায় ঢুকতে হবে?",
+   "boards": "বরিশাল সরকারি বালিকা উচ্চ বিদ্যালয়, বরিশাল; বি এ এফ শাহীন কলেজ, ঢাকা; ইঞ্জিনিয়ারিং ইউনিভারসিটি স্কুল এন্ড কলেজ, ঢাকা; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "অ্যাড অর রিমুভে",
+    "B": "কন্ট্রোল প্যানেলে",
+    "C": "অনলাইনে",
+    "D": "সেটিংসে"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow tick on (খ) is a teacher annotation."
+  },
+  {
+   "slide": 75,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার আনইনস্টল করার পর সাধারণত কম্পিউটার কী ধরনের আচরণ করে?",
+   "boards": "বি এ এফ শাহীন কলেজ, ঢাকা",
+   "options": {
+    "A": "কম্পিউটারটি হ্যাং করে",
+    "B": "কম্পিউটার স্লো হয়",
+    "C": "কম্পিউটারটি সাডডাউন করে",
+    "D": "কম্পিউটারটি রিস্টার্ট হয়"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Yellow slash on (ঘ) is a teacher annotation."
+  },
+  {
+   "slide": 76,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যারের আনইনস্টলের সময় তার কিছু অংশ থেকে যায়। থেকে যাওয়া অংশ কোথায় পাওয়া যাবে?",
+   "boards": "য.বো'২৩; ব.বো.২৩",
+   "options": {
+    "A": "টেম্পোরারি ফাইলে",
+    "B": "কুকিজ ফাইলে",
+    "C": "রেজিস্ট্রি ফাইলে",
+    "D": "রিডমি ফাইলে"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (গ). Yellow tick on (গ) is a teacher annotation."
+  },
+  {
+   "slide": 77,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "নিয়ম না মেনে ইনস্টলকৃত সফটওয়্যার ডিলিট করলে কী ঘটে?",
+   "boards": "আল হেরা একাডেমি, পাবনা",
+   "options": {
+    "A": "সফটওয়্যারটি একেবারে মুছে যায়",
+    "B": "সফটওয়্যারটি কুকিজে জমা হয়",
+    "C": "সফটওয়্যারটি কার্যপোযোগী থাকে",
+    "D": "সফটওয়্যারটি সম্পূর্ণ মুছে যায় না"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Yellow slash on (ঘ) is a teacher annotation."
+  },
+  {
+   "slide": 78,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার আনইনস্টল করার পর তার কিছু অংশ কোথায় থাকে?",
+   "boards": "দিনাজপুর সরকারি বালিকা উচ্চ বিদ্যালয়",
+   "options": {
+    "A": "রিসাইকেল বিনে",
+    "B": "রেজিস্ট্রি ফাইলে",
+    "C": "সোর্স ফাইলে",
+    "D": "ডেটা ফাইলে"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow pen mark on (খ) is a teacher annotation."
+  },
+  {
+   "slide": 79,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "Run কমান্ড সক্রিয় করার জন্য প্রক্রিয়া কোনটি?",
+   "boards": "য.বো.২৪; দি.বো.২৩; আইডিয়াল স্কুল অ্যান্ড কলেজ, মতিঝিল, ঢাকা",
+   "options": {
+    "A": "Windows + r",
+    "B": "Windows + p",
+    "C": "Ctrl + r",
+    "D": "Shift + r"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Yellow pen cross on (ক) is a teacher annotation."
+  },
+  {
+   "slide": 80,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার ডিলিট করার জন্য Run Command চালু করে কি লিখতে হয়?",
+   "boards": "সি.বো.২৪",
+   "options": {
+    "A": "Temp",
+    "B": "Regedit",
+    "C": "Recent",
+    "D": "Tree"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow tick and ellipse on Regedit are teacher annotations; a handwritten arrow sits above the question with no text."
+  },
+  {
+   "slide": 81,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার Delete করার প্রক্রিয়ায় Run কমান্ড-এ গিয়ে কি লিখতে হয়?",
+   "boards": "বগুড়া ক্যান্টনমেন্ট পাবলিক স্কুল ও কলেজ, বগুড়া",
+   "options": {
+    "A": "Prefetch",
+    "B": "%temp%",
+    "C": "regedit",
+    "D": "temp"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (গ). Yellow tick on (গ) and underline/arrow annotations on the question are teacher marks."
+  },
+  {
+   "slide": 82,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনো সফটওয়্যার সম্পূর্ণ মুছে ফেলার জন্য প্রয়োজন-",
+   "boards": "দিনাজপুর জিলা স্কুল, দিনাজপুর",
+   "options": {
+    "A": "সিলেক্ট করে আনইনস্টল করা",
+    "B": "সিলেক্ট করে ডিলিট করা",
+    "C": "Run Cominand এর সাহায্যে কাট করা",
+    "D": "Run Command এর সাহায্যে ডিলিট করা"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Option (গ) printed as Run Cominand (typo in source, copied as shown). Yellow slash on (ঘ) is a teacher annotation."
+  },
+  {
+   "slide": 83,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সাধারণত অপারেটিং সিস্টেম কোন ড্রাইভে থাকে?",
+   "boards": "চ.বো.২৪; সরকারি মুসলিম হাই স্কুল, চট্টগ্রাম",
+   "options": {
+    "A": "C",
+    "B": "D",
+    "C": "E",
+    "D": "F"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot sits at the top edge of option (ক) row, the nearest row. Yellow pen cross on (ক) and ellipse on C are teacher annotations."
+  },
+  {
+   "slide": 84,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "Find Next-এর শর্টকাট কোনটি?",
+   "boards": null,
+   "options": {
+    "A": "Ctrl+F",
+    "B": "Alt+F",
+    "C": "F2",
+    "D": "F3"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Yellow underline under Next, ellipse on F3 and cross on (ঘ) are teacher annotations."
+  },
+  {
+   "slide": 85,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সফটওয়্যার ডিলিট করতে নিচের কোন কী-তে চাপ দিয়ে রেজিস্ ফাইলের সব জায়গা থেকে ফাইলগুলো মুছে ফেলতে হয়?",
+   "boards": "বিন্দুবাসিনী সরকারি বালক উচ্চ বিদ্যালয়, টাঙ্গাইল",
+   "options": {
+    "A": "F1",
+    "B": "F3",
+    "C": "F5",
+    "D": "F7"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow tick on (খ) is a teacher annotation."
+  },
+  {
+   "slide": 86,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ট্রাবলশুটিং কথাটি কোনটির জন্য প্রযোজ্য?",
+   "boards": "সম্মিলিত বো.১৯",
+   "options": {
+    "A": "হিউম্যানওয়্যার",
+    "B": "ফার্মওয়্যার",
+    "C": "সফটওয়্যার",
+    "D": "হার্ডওয়্যার"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ঘ). Yellow tick on (ঘ) is a teacher annotation."
+  },
+  {
+   "slide": 87,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ট্রাবলশুটিং কি নির্ণয়ের প্রক্রিয়া?",
+   "boards": "দিনাজপুর সরকারি বালিকা উচ্চ বিদ্যালয়",
+   "options": {
+    "A": "ফাইল",
+    "B": "সমস্যার উৎস",
+    "C": "সার্ভার নেটওয়ার্ক",
+    "D": "প্রিন্টার"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow pen mark on (খ) is a teacher annotation."
+  },
+  {
+   "slide": 88,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "Beep সাউন্ড দেয় সাধারণত কোনটি সমস্যাযুক্ত হলে?",
+   "boards": "ম.বো.২৪; ঢা.বো:২৩; সম্মিলিত বো.'১৭",
+   "options": {
+    "A": "RAM",
+    "B": "CPU",
+    "C": "COMS",
+    "D": "ROM"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Yellow pen cross on (ক) is a teacher annotation."
+  },
+  {
+   "slide": 89,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ডিসপ্লে না আসলে সাধারণত কোনটি পরিবর্তন করতে হতে পারে?",
+   "boards": "ফেনী সরকারি বালিকা উচ্চ বিদ্যালয়, ফেনী",
+   "options": {
+    "A": "র্যাম",
+    "B": "হার্ডডিস্ক",
+    "C": "রম",
+    "D": "মাউস"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (ক). Yellow pen tick on (ক) is a teacher annotation."
+  },
+  {
+   "slide": 90,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারের মেমোরি প্লটে কী থাকে?",
+   "boards": "দি.বো'২৪",
+   "options": {
+    "A": "CPU",
+    "B": "RAM",
+    "C": "CMOS",
+    "D": "BIOS"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "White dot aligned with option (খ). Yellow ellipse on RAM and tick on (খ) are teacher annotations."
+  },
+  {
+   "slide": 91,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "৫০% ক্ষেত্রে Display না হওয়ার কারণ কিসের সমস্যা?",
+   "boards": "বরিশাল জিলা স্কুল, বরিশাল, উদয়ন মাধ্যমিক বিদ্যালয়, বরিশাল",
+   "options": {
+    "A": "অপারেটিং সিস্টেম",
+    "B": "রম",
+    "C": "র্যাম",
+    "D": "হার্ডডিস্ক"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher pen mark on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 92,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনোরূপ গরম হওয়া ছাড়াই বারবার কম্পিউটার Shut-down হওয়ার কারণ কী?",
+   "boards": "ম.বো.'২৩",
+   "options": {
+    "A": "ত্রুটিপূর্ণ মনিটর",
+    "B": "ত্রুটিপূর্ণ কীবোর্ড",
+    "C": "ত্রুটিপূর্ণ আইসি",
+    "D": "ত্রুটিপূর্ণ মাউস"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle and 'IC' note on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 93,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনটির সমস্যার জন্য কোনোরূপ উত্তপ্ত হওয়া ছাড়াই কম্পিউটারটি কয়েক মিনিট পর পর Shut Down হয়ে যায়?",
+   "boards": "ইস্পাহানী পাবলিক স্কুল ও কলেজ, চট্টগ্রাম",
+   "options": {
+    "A": "মাদারবোর্ডের ক্যাপাসিটর",
+    "B": "প্রসেসের এর Heat Sink",
+    "C": "ডিভিডি প্লেয়ার",
+    "D": "র্যামের সমস্যা"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 94,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনোরূপ উত্তপ্ত হওয়া ছাড়াই কম্পিউটার কয়েক মিনিট পরপর Shutdown হওয়ার কারণ কী?",
+   "boards": "আইডিয়াল স্কুল অ্যান্ড কলেজ, মতিঝিল, ঢাকা",
+   "options": {
+    "A": "RAM নষ্ট",
+    "B": "HD নষ্ট",
+    "C": "কোনো IC অতিরিক্ত তাপ উৎপাদন",
+    "D": "কেসিং এর সমস্যা"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle around IC on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 95,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনটির কারণে কম্পিউটার ঘন ঘন হ্যাং করে?",
+   "boards": "সেন্ট জোসেফ উচ্চ মাধ্যমিক বিদ্যালয়",
+   "options": {
+    "A": "ভাইরাস",
+    "B": "অ্যান্টিভাইরাস",
+    "C": "ইউটিলিটি",
+    "D": "লিনাক্স"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle and tick on option ক; answer taken from white dot beside option ক"
+  },
+  {
+   "slide": 96,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারের মেটাল অংশে হাত লাগালে শক করে কেন?",
+   "boards": "ক্যান্টনমেন্ট পাবলিক স্কুল ও কলেজ, মোমেনশাহ",
+   "options": {
+    "A": "কম্পিউটারটি আর্থিং করা না থাকলে",
+    "B": "পাওয়ার সাপ্লাই নষ্ট থাকলে",
+    "C": "loose কানেকশন থাকলে",
+    "D": "র্যামে সমস্যা থাকলে"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick on option ক; answer taken from white dot beside option ক"
+  },
+  {
+   "slide": 97,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনটির ব্যাটারি নষ্ট হলে কম্পিউটারে তারিখ ঠিক থাকে না?",
+   "boards": null,
+   "options": {
+    "A": "ROM",
+    "B": "CMOS",
+    "C": "RAM",
+    "D": "BIOS"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher cross on option খ; answer taken from white dot beside option খ"
+  },
+  {
+   "slide": 98,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "CMOS-এর পূর্ণরূপ কী?",
+   "boards": "রা.বো. ২৪.ম.যো.'২৩, বাংলাদেশে নৌবাহিনী স্কুল ও কলেজ, চট্টগ্রাম",
+   "options": {
+    "A": "Complete Metal Oxide Semiconductor",
+    "B": "Complete Metalic Oxide Semiconductor",
+    "C": "Complementary Metal-Oxide Semiconductor",
+    "D": "Complemental Metal Oxidation Subject"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher pen mark on option গ and circle on CMOS in question; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 99,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটার চালু করার পর প্রতিবার ঘড়ির সময় ও তারিখ ঠিক করতে হয়। নিচের কোন ব্যাটারি পরিবর্তনের মাধ্যমে উক্ত সমস্যার সমাধান করবে?",
+   "boards": "য.বো.'২৪",
+   "options": {
+    "A": "IPS",
+    "B": "UPS",
+    "C": "COMS",
+    "D": "CMOS"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle on CMOS and cross on option ঘ; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 100,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনটির কারণে কম্পিউটারের তারিখ এবং সময় ঠিক থাকে না?",
+   "boards": "ঢা.বো'২৩; সম্মিলিত বো. '১৯",
+   "options": {
+    "A": "RAM",
+    "B": "ROM",
+    "C": "COMS",
+    "D": "CMOS"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher cross on option ঘ; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 101,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "বায়োসের কোনো অপশন পরিবর্তন করলে সেভ না হবার কারণ কোনটি?",
+   "boards": "চ.বো.২৩",
+   "options": {
+    "A": "হার্ডডিস্ক ড্রাইভ পরিবর্তন করা",
+    "B": "প্রোগ্রাম ইনস্টল করতে হবে",
+    "C": "CMOS-ব্যাটারি কার্যক্ষমতা হ্রাস",
+    "D": "ভাইরাসমুক্ত করা"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick and underline on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 102,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "মাদারবোর্ডের সাথে সংযুক্ত ব্যাটারিকে কী বলে?",
+   "boards": "আদমজী ক্যান্টনমেন্ট পাবলিক স্কুল, ঢাকা",
+   "options": {
+    "A": "SOME",
+    "B": "MOSE",
+    "C": "COMS",
+    "D": "CMOS"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 8,
+   "handwritten": null,
+   "remarks": "Star count of 8 from overlapping icons (checked on enlarged crop); teacher pen mark on option ঘ; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 103,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "হার্ডডিস্ক-এ পাওয়ার না থাকলে কোনটি ঘটবে?",
+   "boards": "দিনাজপুর সরকারি বালিকা উচ্চ বিদ্যালয়, দিনাজপুর",
+   "options": {
+    "A": "কম্পিউটার Shut down হতে পারে",
+    "B": "কম্পিউটার সিস্টেম চালু হবে না",
+    "C": "Boot Disk Failure অথবা Hard Disk not found ম্যাসেজ দেখাবে",
+    "D": "CMOS ব্যাটারি কাজ করবে না"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher ticks on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 104,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "BIOS এর পূর্ণরূপ কী?",
+   "boards": "মাইলস্টোন কলেজ, ঢাকা",
+   "options": {
+    "A": "Basic Intervention Outer System",
+    "B": "Basic Input Operating System",
+    "C": "Basic Input Output System",
+    "D": "কোনোটিই নয়"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 105,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সাধারণত কম্পিউটারে অতিরিক্ত প্রোগ্রাম ইনস্টল করতে গিয়ে কিংবা একাধিক প্রোগ্রাম একসাথে ওপেন করে কাজ করতে গেলে নিচের কোন ম্যাসেজ প্রদর্শিত হয়?",
+   "boards": "রা.বো: ২৪",
+   "options": {
+    "A": "Out of Memory",
+    "B": "Boot Disk Failure",
+    "C": "Hard Disk Not Found",
+    "D": "Shutdown"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle and tick on option ক; answer taken from white dot beside option ক"
+  },
+  {
+   "slide": 106,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারে \"Not Enough Memory\" মেসেজ দেখালে সমাধানের উপায় কী?",
+   "boards": "সম্মিলিত বো.২০",
+   "options": {
+    "A": "মনিটরের ব্রাইটনেস এবং কন্ট্রাস্ট ঠিক করতে হবে",
+    "B": "পাওয়ার বাটন চালু আছে কিনা দেখতে হবে",
+    "C": "মাদারবোর্ডে অধিক র্যাম ব্যবহার করতে হবে",
+    "D": "নতুন CMOS ব্যাটারি লাগাতে হবে"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick on option গ; answer taken from white dot beside option গ"
+  },
+  {
+   "slide": 107,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটার কখন not enough memory দেখায়?",
+   "boards": "রাজউক উত্তরা মডেল কলেজ, ঢাকা",
+   "options": {
+    "A": "উইন্ডোজ এর আপডেট না থাকলে",
+    "B": "হার্ডডিস্কে সমস্যা হলে",
+    "C": "সিপিইউতে সমস্যা হলে",
+    "D": "কম্পিউটারে অতিরিক্ত প্রোগ্রাম ইনস্টল করতে গেলে"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle on option ঘ; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 108,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "মাউস কাজ না করলে কোন কাজটি করণীয়?",
+   "boards": "ঢা.বো ২৪",
+   "options": {
+    "A": "CMOS ব্যাটারি পরিবর্তন করা",
+    "B": "ভাইরাস ক্লিন করা",
+    "C": "মাদার বোর্ডে অধিক র্যাম ব্যবহার করা",
+    "D": "পোর্ট পরিবর্তন করা"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circle on option ঘ; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 109,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ইন্টারনেট ব্রাউজারের ক্যাশ মেমোরিতে জমা হয়-\ni. টেম্পোরারি ফাইল\nii. কুকিজ\niii. ই-ফাইল\nনিচের কোনটি সঠিক?",
+   "boards": "সফিউদ্দীন সরকার একাডেমী এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher ticks on i, ii and on option ক; answer taken from white dot beside option ক"
+  },
+  {
+   "slide": 110,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "টেম্পোরারি ফাইল মুছে দেওয়ার ফলে-\ni. হার্ডডিস্কের জায়গা খালি হবে\nii. হার্ডডিস্কের অনেক খালি জায়গা নষ্ট হবে\niii. কম্পিউটারের গতি বেড়ে যাবে\nনিচের কোনটি সঠিক?",
+   "boards": null,
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher ticks on i and iii and a cross on option খ; answer taken from white dot beside option খ, which conflicts with the teacher cross - verify if needed"
+  },
+  {
+   "slide": 111,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "বর্তমানে কোনগুলো ছাড়া আইসিটি ডিভাইস ব্যবহার করা মারাত্মক ঝুঁকিপূর্ণ?\ni. এন্টি ভাইরাস\nii. এন্টি স্পাইওয়্যার\niii. এন্টি ম্যালওয়্যার\nনিচের কোনটি সঠিক?",
+   "boards": "বীরশ্রেষ্ঠ নূর মোহাম্মদ পাবলিক স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher circles on i, ii, iii and cross on option ঘ; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 112,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "ডিস্ক ক্লিন আপ ও ডিফ্র্যাগমেন্টার যে কাজটি করে-\ni. হার্ডডিস্কের জায়গা খালি করে\nii. মেমোরি থেকে ভাইরাস দূর করে\niii. ফাইলগুলো সাজিয়ে কম্পিউটারকে গতিশীল করে\nনিচের কোনটি সঠিক?",
+   "boards": null,
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher cross on statement ii and on option খ; answer taken from white dot beside option খ"
+  },
+  {
+   "slide": 113,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারের কাজ করার গতি বজায় রাখার জন্য ব্যবহার করা হয়\ni. ডিস্ক ক্লিনআপ\nii. ডিস্ক ফরমেট\niii. ডিস্ক ডিফ্র্যাগমেন্টার\nনিচের কোনটি সঠিক?",
+   "boards": null,
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Question enclosed in a white highlight box; teacher ticks on i and iii, cross on ii and on option খ; answer taken from white dot beside option খ"
+  },
+  {
+   "slide": 114,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারে বিশাল পরিমাণ তথ্য রাখা সম্ভব হয়েছে-\ni. সিডিরম\nii. ডিভিডি\niii. পেনড্রাইভ\nনিচের কোনটি সঠিক?",
+   "boards": "ম.বো.২৩; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "Storage",
+   "remarks": "Boxed 'Storage' note with arrow on the slide (teacher's note, not an answer marker); teacher ticks on i, ii, iii; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 115,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারের কাজের স্বাভাবিক গতি বজায় রাখার জন্য প্রয়োজন-\ni. মাঝে মধ্যে অব্যবহৃত ফাইল পরিষ্কার করান\nii. মাঝে মধ্যে কম্পিউটার খুলে ধুলাবালি পরিষ্কার করা\niii. মাঝে মধ্যে ডিস্ক ডিফ্র্যাগমেন্ট করা\nনিচের কোনটি সঠিক?",
+   "boards": "সম্মিলিত বো. '১৮",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher pen marks on statements i, ii and iii; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 116,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কোনো সফটওয়্যার ইনস্টল করার পূর্বে আমাদের যে বিষয়গুলো লক্ষ্য রাখতে হবে-\ni. সফটওয়্যারটি হার্ডওয়্যার সাপোর্ট করে কি না\nii. 'read me' ফাইলে জরুরি কিছু আছে কি না\niii. এন্টি ভাইরাস সফটওয়্যার বন্ধ আছে কি না\nনিচের কোনটি সঠিক?",
+   "boards": "কু বো: ২৩: য.বো: ২৩: সি বো ২৩: মাদ্রাসা বো. ২৩",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher red underlines on statements; a small stray white dot at lower left is not an answer marker; answer taken from white dot beside option ঘ"
+  },
+  {
+   "slide": 117,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "সিস্টেম অত্যন্ত গরম হয়ে অস্বাভাবিকভাবে কম্পিউটার বন্ধ হয়ে গেলে-\ni. কেসিংটি খুলতে হবে\nii. মাদারবোর্ড থেকে সতর্কতার সাথে প্রসেসর ফ্যানটি সরাতে হবে\niii. নতুন RAM লাগাতে হবে\nনিচের কোনটি সঠিক?",
+   "boards": "কু.বো.২৪",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "A",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher red cross on option ক; answer taken from white dot beside option ক, which conflicts with the teacher cross - verify if needed"
+  },
+  {
+   "slide": 118,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "কম্পিউটারে CMOS ব্যাটারি নষ্ট হলে-\ni. তারিখ ও সময় ঠিক থাকে না\nii. মেটাল অংশ স্পর্শ করলে শক করে\niii. বায়োসে কোনো অপশন সেভ হয়না\nনিচের কোনটি সঠিক?",
+   "boards": "মাদ্রাসা বো.২৩",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick on i and iii, cross on ii, circle on option খ; answer taken from white dot beside option খ"
+  },
+  {
+   "slide": 119,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "মনিটরের পাওয়ার অন কিন্তু পর্দায় কোনো ছবি নেই কারণ-\ni. ভিডিয়ো ক্যাবলটি ভালোভাবে সংযোগ করা নেই\nii. মনিটরের সফটওয়্যার ইনস্টল করা নেই\niii. ব্রাইটনেস এবং কন্ট্রাস্ট ঠিক করা নেই\nনিচের কোনটি সঠিক?",
+   "boards": "দি বো.২৩",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick on i, cross on ii, underlines on i and iii; answer taken from white dot beside option খ"
+  },
+  {
+   "slide": 120,
+   "type": "mcq",
+   "style": "finalshot",
+   "chapter_hint": null,
+   "qno": null,
+   "question": "মনিটরের পাওয়ার চালু কিন্তু মনিটরে কোনো ছবি আসেনা\"-কী সমস্যার কারণে হতে পারে?\ni. Brightness\nii. Windows\niii. Contrast\nনিচের কোনটি সঠিক?",
+   "boards": "ম.বো'২৩",
+   "options": {
+    "A": "i ও ii",
+    "B": "i ও iii",
+    "C": "ii ও iii",
+    "D": "i, ii ও iii"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Teacher tick on i, cross on ii, circle on iii; answer taken from white dot beside option খ"
+  }
+ ],
+ "other_slides": []
+}

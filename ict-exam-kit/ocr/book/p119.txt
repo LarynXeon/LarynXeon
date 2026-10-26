@@ -1,0 +1,7 @@
+##PAGE pdf=119 printed=১১৪
+- ৫. Thonny সফটওয়্যার এরপর চালু করলে নিচের মতো উইন্ডো দেখতে পাবে-
+[স্ক্রিনশট: Thonny welcome window — large "Th" logo; labels "Language:" with dropdown "English (US) [default]", "Initial settings:" with dropdown "Standard"; button "Let's go!"]
+Let’s go! বাটনে ক্লিক করলে নিচের মতো উইন্ডো আসবে-
+[স্ক্রিনশট: Thonny main window — title "Thonny - <untitled> @ 1 : 1"; menu "File Edit View Run Tools Help"; tabs "<untitled>", "Assistant", "Shell"; shell text "Python 3.10.11 (C:\Program Files (x86)\Thonny\python.exe)" with ">>>" prompt; status bar "Local Python 3 • Thonny's Python"]
+- ৬. এই উইন্ডোতে থাকা গুরুত্বপূর্ণ কয়েকটি অংশ বুঝে নাও-
+[স্ক্রিনশট: annotated Thonny main window with callouts — "আউটপুট দেখতে রান বাটনে ক্লিক করবে" (Run button); "এখানে ক্লিক করে প্রোগ্রাম সেভ করবে" (Save button); "প্রোগ্রামের নাম এখানে বসবে" (<untitled> file tab); "(কোড লেখার জায়গা)" (code editor area); "এখানে কোডের আউটপুট বসবে" (Shell area)]

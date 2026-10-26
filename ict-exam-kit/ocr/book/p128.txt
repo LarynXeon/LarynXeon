@@ -1,0 +1,21 @@
+##PAGE pdf=128 printed=১২৩
+উল্লেখ্য যে, if...else কন্ট্রোলে ব্যবহৃত শর্ত (Condition) সাধারণত এক বা একাধিক লজিক্যাল বা রিলেশনাল এক্সপ্রেশন হয়। if (Condition) স্টেটমেন্টের পরে কোলন বসে।
+এই Condition বা শর্তের মান যদি সত্য হয় তবে Body of if এ বর্ণিত কাজগুলো সম্পাদিত হবে। আর যদি মিথ্যা হয় তাহলে Body of else এ বর্ণিত কাজসমূহ সম্পাদিত হয়। এখানে statements এ যে কোন বৈধ সিম্পল বা কম্পাউন্ড স্টেটমেন্ট হতে পারে। চিত্রে if...else স্টেটমেন্টের প্রবাহচিত্র দেখান হলো-
+[চিত্র: flowchart — diamond "Test expression"; "False" branch → box "Body of else"; "True" branch → box "Body of if"; both branches join at box "Statement just below if..else"]
+ব্যবহারিক সমস্যা # ৩ : পাইথন ভাষার একটি প্রোগ্রাম তৈরি করতে হবে যাতে কোন নাগরিকের বয়স ইনপুট দেওয়া হলে তিনি নির্বাচনের ভোটার হওয়ার উপযুক্ত কিনা তা যাচাই করবে।
+সমাধান : বাংলাদেশের যে কোন নাগরিক ১৮ বছর বয়স হলেই নির্বাচনে ভোটার হিসাবে বিবেচিত হয়। নিচে প্রোগ্রামটির কোড দেওয়া হলো।
+    age = int(input('Please enter your age: '))
+    if age >= 18:
+        print('You are eligible for voting')
+    else :
+        print('You are not eligible for voting')
+ব্যবহারিক সমস্যা # ৪ : কোন সংখ্যা জোড় না বিজোড় তা নির্ণয় করার জন্য একটি পাইথন প্রোগ্রাম লেখো।
+সমাধান : নিচে প্রোগ্রামটির কোড দেওয়া হলো।
+    num  = int(input('Insert a number= '))
+    if num%2!= 0:
+        print('The number is odd')
+    else :
+        print(' The number is even')
+প্রোগ্রামটি রান করে প্রাপ্ত নমুনা ফলাফল-
+    Insert a number = 67
+    The number is odd

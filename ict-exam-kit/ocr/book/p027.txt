@@ -1,0 +1,11 @@
+##PAGE pdf=027 printed=২২
+তথ্য ও যোগাযোগ প্রযুক্তি
+- ৪. অপারেটিং সফটওয়্যার যে ড্রাইভে রয়েছে অর্থাৎ C সিলেক্ট করতে হবে।
+[স্ক্রিনশট: "Export Registry File" ডায়ালগ বক্স। Save in: Computer। ড্রাইভ তালিকা: Hard Disk Drives (3) - PRIMARY OS (C:), VBOX (D:), DATA (E:); Devices with Removable Storage (1) - DVD RW Drive (F:)। বাম প্যানেল: Recent Places, Desktop, Libraries, Computer, Network। File name, Save as type: Registration Files (*.reg), বাটন: Save, Cancel। বৃত্তাকার চিহ্ন: ৪। তীর দ্বারা PRIMARY OS (C:) নির্দেশিত]
+- ৫. নাম দিয়ে ফাইলটি সেভ করতে হবে। এটি খুবই জরুরি। কোনো ভুল হলে যাতে সিস্টেম ঠিক করা যায়।
+[স্ক্রিনশট: "Export Registry File" ডায়ালগ বক্স (নিচের অংশ)। Save in: Computer। ড্রাইভ তালিকা: PRIMARY OS (C:), VBOX (D:), DATA (E:); DVD RW Drive (F:)। File name: REGBACKUP। Save as type: Registration Files (*.reg)। বাটন: Save, Cancel। Export range। বৃত্তাকার চিহ্ন: ৫]
+- ৬. অতঃপর Edit -এ প্রবেশ করতে হবে।
+[স্ক্রিনশট: Registry Editor উইন্ডো (বাম ছবি)। মেনু বার: File, Edit, View, Favorites, Help। Edit মেনু নির্বাচিত। বাম প্যানেলে: Computer, HKEY_CLASSES_ROOT, HKEY_CURRENT_USER, HKEY_LOCAL_MACHINE, HKEY_USERS, HKEY_CURRENT_CONFIG। বৃত্তাকার চিহ্ন: ৬]
+[স্ক্রিনশট: Registry Editor-এর Edit মেনু খোলা (ডান ছবি)। মেনু আইটেম: New, Permissions..., Delete (Del), Rename, Copy Key Name, Find... (Ctrl+F), Find Next (F3)। Find... নির্বাচিত। বৃত্তাকার চিহ্ন: ৭]
+- ৭. Find -এ যেতে হবে।
+২২

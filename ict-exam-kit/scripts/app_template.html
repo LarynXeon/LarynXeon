@@ -1,0 +1,586 @@
+<title>আইসিটি পরীক্ষা কিট</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/*__FONTS__*/
+/* Layout: one centered column, one card at a time, sticky top bar, fixed full-width Next button at the bottom. */
+:root{
+  --bg:#f4f6f3; --surface:#ffffff; --surface-2:#eaeee9; --fg:#18201c; --muted:#5c6a63; --line:#d6ddd7;
+  --accent:#006a4e; --accent-fg:#ffffff; --accent-soft:#d8ece4;
+  --good:#1d7a46; --good-soft:#dcf1e3; --bad:#b3261e; --bad-soft:#f9dedb; --warn:#8a5a00; --warn-soft:#fbefd2;
+  --star:#c58a00;
+  --font:"Hind Siliguri","Noto Sans Bengali",system-ui,sans-serif;
+  --display:"Noto Serif Bengali","Hind Siliguri",serif;
+  --mono:"Kit Code Bn",ui-monospace,"SFMono-Regular",Menlo,Consolas,"DejaVu Sans Mono",monospace;
+  --fs:18px; --radius:14px;
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1412; --surface:#171d1a; --surface-2:#202825; --fg:#e7ede9; --muted:#9aa8a1; --line:#2c3632;
+  --accent-soft:#16332a; --good:#5fd08f; --good-soft:#17311f; --bad:#ff8a80; --bad-soft:#3a1d1b; --warn:#f2c055; --warn-soft:#352a12; --star:#f2c055;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0f1412; --surface:#171d1a; --surface-2:#202825; --fg:#e7ede9; --muted:#9aa8a1; --line:#2c3632;
+  --accent-soft:#16332a; --good:#5fd08f; --good-soft:#17311f; --bad:#ff8a80; --bad-soft:#3a1d1b; --warn:#f2c055; --warn-soft:#352a12; --star:#f2c055;
+  color-scheme:dark}
+html{font-size:var(--fs)}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);font-size:1rem;line-height:1.6;-webkit-text-size-adjust:100%}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+#fbHost{scroll-margin-bottom:130px}
+.themebtn{border:1px solid var(--line);background:var(--surface);border-radius:99px;padding:4px 12px;font-size:.8rem;font-weight:600;color:var(--muted)}
+.brand .right{display:flex;align-items:center;gap:10px}
+button{font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:720px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 140px}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:12px 8px;display:flex;flex-direction:column;gap:10px}
+.brand{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.brand h1{font-family:var(--display);font-size:1.25rem;margin:0;font-weight:700;letter-spacing:.01em;text-wrap:balance}
+.brand .sub{color:var(--muted);font-size:.8rem;white-space:nowrap}
+nav.tabs{display:flex;gap:4px;background:var(--surface-2);padding:4px;border-radius:999px}
+nav.tabs button{flex:1;border:0;background:transparent;padding:8px 6px;border-radius:999px;font-size:.92rem;color:var(--muted);font-weight:600}
+nav.tabs button[aria-selected="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.08)}
+section.view{display:flex;flex-direction:column;gap:18px;padding-top:8px}
+.modes{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
+.modes::-webkit-scrollbar{display:none}
+.chip{border:1px solid var(--line);background:var(--surface);padding:6px 14px;border-radius:999px;font-size:.88rem;white-space:nowrap;font-weight:600;color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:var(--accent-fg)}
+.status{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:.85rem;font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--surface-2);border-radius:99px;overflow:hidden}
+.bar > i{display:block;height:100%;background:var(--accent);border-radius:99px;transition:width .4s ease}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:22px 20px;display:flex;flex-direction:column;gap:16px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:.8rem;color:var(--muted)}
+.tag{background:var(--surface-2);padding:2px 10px;border-radius:99px;font-weight:600}
+.tag.real{background:var(--accent-soft);color:var(--accent)}
+.stars{color:var(--star);letter-spacing:1px}
+.meta .grow{flex:1}
+.starbtn{border:0;background:transparent;font-size:1.25rem;line-height:1;padding:4px 6px;color:var(--muted)}
+.starbtn[aria-pressed="true"]{color:var(--star)}
+.timer{font-variant-numeric:tabular-nums}
+.q{font-size:1.32rem;line-height:1.55;font-weight:600;white-space:pre-wrap;margin:0;text-wrap:pretty}
+.q.code,.opt.code .ot{font-family:var(--mono);font-size:1.05rem}
+.boards{font-size:.78rem;color:var(--muted);margin-top:-8px}
+.hint{background:var(--warn-soft);color:var(--fg);border-radius:10px;padding:10px 12px;font-size:.9rem}
+.hint b{color:var(--warn)}
+.opts{display:flex;flex-direction:column;gap:10px}
+.opt{display:flex;gap:12px;align-items:flex-start;text-align:left;width:100%;border:1.5px solid var(--line);background:var(--surface);padding:13px 14px;border-radius:12px;font-size:1.12rem;line-height:1.45;transition:border-color .15s,background .15s}
+.opt:hover:not([disabled]){border-color:var(--accent)}
+.opt .ol{flex:0 0 1.8rem;height:1.8rem;border-radius:50%;background:var(--surface-2);display:grid;place-items:center;font-size:.95rem;font-weight:700}
+.opt .ot{flex:1;min-width:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.opt[disabled]{cursor:default}
+.opt.right{border-color:var(--good);background:var(--good-soft)}
+.opt.right .ol{background:var(--good);color:var(--surface)}
+.opt.wrong{border-color:var(--bad);background:var(--bad-soft)}
+.opt.wrong .ol{background:var(--bad);color:var(--surface)}
+.opt.dim{opacity:.55}
+.fb{display:flex;flex-direction:column;gap:12px;border-top:1px dashed var(--line);padding-top:16px}
+.verdict{font-weight:700;font-size:1.05rem}
+.verdict.ok{color:var(--good)} .verdict.no{color:var(--bad)}
+.lesson{background:var(--accent-soft);border-radius:12px;padding:12px 14px}
+.lesson .lh{font-weight:700;color:var(--accent);font-size:.85rem;letter-spacing:.02em}
+.lesson p{margin:4px 0 0}
+.pg{font-weight:700;white-space:nowrap}
+.flag{background:var(--warn-soft);border-radius:12px;padding:10px 14px;font-size:.92rem}
+.flag b{color:var(--warn)}
+.rate{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.85rem;color:var(--muted)}
+.rate .rlabel{flex:1 1 100%}
+.rate button{border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:3px 10px;font-size:.8rem}
+.rate button[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.next{position:fixed;left:0;right:0;bottom:0;z-index:6;background:linear-gradient(to top,var(--bg) 70%,transparent);padding-top:18px;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px));padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.next button{display:block;width:100%;max-width:720px;margin:0 auto;border:0;border-radius:14px;background:var(--accent);color:var(--accent-fg);font-size:1.15rem;font-weight:700;padding:16px}
+.next button[disabled]{opacity:.35;cursor:default}
+.empty{text-align:center;padding:40px 10px;display:flex;flex-direction:column;gap:14px;align-items:center}
+.empty h2{font-family:var(--display);margin:0;font-size:1.4rem}
+.btn{border:1.5px solid var(--accent);background:var(--surface);color:var(--accent);border-radius:12px;padding:10px 18px;font-weight:700}
+.btn.solid{background:var(--accent);color:var(--accent-fg)}
+/* progress */
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px}
+.panel h2{margin:0 0 12px;font-size:1.05rem;font-family:var(--display)}
+.chrow{display:grid;grid-template-columns:4.5rem 1fr auto;gap:6px 12px;align-items:center;padding:8px 0;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.chrow:last-child{border-bottom:0}
+.chrow .cn{font-weight:700}
+.chrow .ct{grid-column:2/4;font-size:.82rem;color:var(--muted);margin-top:-4px}
+.chrow .bar{height:8px}
+.chrow .pct{font-weight:700;font-size:.9rem}
+.budget{font-size:.8rem;color:var(--muted)}
+.weak{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
+.weak li{display:flex;gap:10px;align-items:baseline;font-size:.92rem}
+.weak .wc{color:var(--bad);font-weight:700;font-variant-numeric:tabular-nums}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}
+.stats div{background:var(--surface-2);border-radius:10px;padding:10px 4px}
+.stats b{display:block;font-size:1.3rem;font-variant-numeric:tabular-nums}
+.stats span{font-size:.78rem;color:var(--muted)}
+/* settings */
+.set{display:flex;flex-direction:column;gap:2px}
+.srow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}
+.srow:last-child{border-bottom:0}
+.srow label{flex:1;min-width:0}
+.srow small{display:block;color:var(--muted);font-size:.78rem;line-height:1.4}
+.seg{display:flex;gap:4px;background:var(--surface-2);border-radius:10px;padding:3px;flex-wrap:wrap;justify-content:flex-end}
+.seg button{border:0;background:transparent;border-radius:8px;padding:5px 10px;font-size:.85rem;font-weight:600;color:var(--muted)}
+.seg button[aria-pressed="true"]{background:var(--surface);color:var(--fg);box-shadow:0 1px 2px rgba(0,0,0,.1)}
+.sw{appearance:none;width:46px;height:28px;border-radius:99px;background:var(--line);position:relative;cursor:pointer;flex:0 0 auto;transition:background .2s}
+.sw::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--surface);transition:transform .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
+.sw:checked{background:var(--accent)} .sw:checked::after{transform:translateX(18px)}
+.swatches{display:flex;gap:8px}
+.swatches button{width:30px;height:30px;border-radius:50%;border:3px solid transparent;padding:0}
+.swatches button[aria-pressed="true"]{border-color:var(--fg)}
+.chfilter{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+/* notes */
+.notes-nav{display:flex;gap:6px;flex-wrap:wrap}
+.nch{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px 18px 8px}
+.nch > h2{font-family:var(--display);font-size:1.25rem;margin:0 0 2px;text-wrap:balance}
+.nch .nmeta{color:var(--muted);font-size:.8rem;margin-bottom:10px}
+.nch h3{font-size:1rem;margin:18px 0 6px;color:var(--accent)}
+.fact{padding:7px 0;border-bottom:1px solid var(--line)}
+.fact:last-child{border-bottom:0}
+.fact .ft{font-weight:600}
+.fact .fc{color:var(--muted);font-size:.9rem}
+.fact .st{color:var(--star)}
+.trap{background:var(--warn-soft);border-radius:10px;padding:8px 12px;margin:8px 0;font-size:.93rem}
+.trap b{color:var(--warn)}
+.must{border:2px solid var(--accent);border-radius:12px;padding:10px 14px;margin:16px 0 12px}
+.must b{color:var(--accent)}
+.must ol{margin:6px 0 0;padding-left:1.6rem;list-style-type:bengali}
+.srow.stack{flex-direction:column;align-items:stretch}
+.srow.stack .chfilter{justify-content:flex-start}
+.unsure{color:var(--warn);font-weight:700}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(96px + env(safe-area-inset-bottom,0px));background:var(--fg);color:var(--bg);padding:8px 16px;border-radius:99px;font-size:.88rem;z-index:20;opacity:0;transition:opacity .25s;pointer-events:none;max-width:90vw;text-align:center}
+.toast.show{opacity:1}
+#confetti{position:fixed;inset:0;pointer-events:none;z-index:30}
+.celebrate{background:var(--good-soft);color:var(--good);border-radius:12px;padding:10px 14px;font-weight:700;text-align:center}
+@media (max-width:420px){.q{font-size:1.2rem}.opt{font-size:1.05rem;padding:12px}.card{padding:18px 14px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+
+<canvas id="confetti" aria-hidden="true"></canvas>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><h1>আইসিটি পরীক্ষা কিট</h1><span class="right"><span class="sub" id="brandSub"></span><button class="themebtn" id="themeBtn" aria-label="থিম বদলাও"></button></span></div>
+    <nav class="tabs" role="tablist">
+      <button role="tab" id="tab-quiz" aria-selected="true" data-view="quiz">অনুশীলন</button>
+      <button role="tab" id="tab-notes" aria-selected="false" data-view="notes">নোট</button>
+      <button role="tab" id="tab-prog" aria-selected="false" data-view="prog">অগ্রগতি</button>
+      <button role="tab" id="tab-set" aria-selected="false" data-view="set">সেটিংস</button>
+    </nav>
+  </header>
+
+  <section class="view" id="view-quiz">
+    <div class="modes" id="modes" role="group" aria-label="মোড"></div>
+    <div>
+      <div class="status"><span id="stLeft"></span><span id="stRight"></span></div>
+      <div class="bar" style="margin-top:6px"><i id="stBar" style="width:0%"></i></div>
+    </div>
+    <div id="cardHost"></div>
+  </section>
+
+  <section class="view" id="view-notes" hidden>
+    <div class="notes-nav" id="notesNav"></div>
+    <div id="notesHost" style="display:flex;flex-direction:column;gap:16px"></div>
+  </section>
+
+  <section class="view" id="view-prog" hidden>
+    <div class="panel"><div class="stats" id="statsHost"></div></div>
+    <div class="panel"><h2>অধ্যায়ভিত্তিক দক্ষতা ও সময়</h2><div id="chHost"></div></div>
+    <div class="panel"><h2>দুর্বল জায়গা</h2><ul class="weak" id="weakHost"></ul></div>
+    <div class="panel"><h2>পড়ার পরিকল্পনা (মোট ২ ঘণ্টা)</h2><div id="planHost"></div></div>
+    <div style="text-align:center"><button class="btn" id="resetBtn">সব অগ্রগতি মুছে ফেলো</button></div>
+  </section>
+
+  <section class="view" id="view-set" hidden>
+    <div class="panel set" id="setHost"></div>
+  </section>
+</div>
+<div class="next" id="nextWrap"><button id="nextBtn" disabled>পরের প্রশ্ন</button></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const DATA = /*__DATA__*/null;
+(function(){
+"use strict";
+const $ = s => document.querySelector(s);
+const BN = "০১২৩৪৫৬৭৮৯";
+const bn = n => String(n).replace(/[0-9]/g, d => BN[d]);
+const LBL = ["ক","খ","গ","ঘ"];
+const KEY = "ict-kit-v1";
+const CH = {}; DATA.chapters.forEach(c => CH[c.n] = c);
+const CARDS = DATA.cards;
+const BYID = {}; CARDS.forEach(c => BYID[c.id] = c);
+const PAT = DATA.patterns || {};
+const ACCENTS = [
+  {k:"green", name:"সবুজ", l:"#006a4e", d:"#3fbf8f"},
+  {k:"blue", name:"নীল", l:"#2a55c9", d:"#7ea2ff"},
+  {k:"plum", name:"বেগুনি", l:"#7a3fb8", d:"#c39bf2"},
+  {k:"rust", name:"কমলা", l:"#b8521a", d:"#f0a070"},
+  {k:"red", name:"লাল", l:"#b0283a", d:"#ff8f9c"}
+];
+const DEF = {theme:"system", accent:"green", size:18, shuffleQ:true, shuffleO:false, hints:false, timer:true, starOnly:false, chapters:DATA.chapters.map(c=>c.n), order:"mix"};
+
+/* ---------- storage ---------- */
+let S = {v:1, cs:{}, tick:0, time:{}, ustar:{}, set:Object.assign({},DEF), mastered100:{}};
+try{ const raw = localStorage.getItem(KEY); if(raw){ const o = JSON.parse(raw); if(o && o.v===1){ S = Object.assign(S,o); S.set = Object.assign({},DEF,o.set||{}); } } }catch(e){}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify(S)); }catch(e){} }
+const cs = id => S.cs[id] || (S.cs[id] = {n:0,w:0,g:0,m:false,d:null,last:null,ms:0});
+const starred = c => !!(c.st || S.ustar[c.id]);
+
+/* ---------- theme ---------- */
+const mq = window.matchMedia ? matchMedia("(prefers-color-scheme: dark)") : null;
+function isDark(){ return S.set.theme==="dark" || (S.set.theme==="system" && mq && mq.matches); }
+function applyTheme(){
+  const r = document.documentElement;
+  if(S.set.theme==="system") r.removeAttribute("data-theme"); else r.setAttribute("data-theme", S.set.theme);
+  const a = ACCENTS.find(x=>x.k===S.set.accent) || ACCENTS[0];
+  r.style.setProperty("--accent", isDark()? a.d : a.l);
+  r.style.setProperty("--accent-fg", isDark()? "#0f1412" : "#ffffff");
+  r.style.setProperty("--fs", S.set.size+"px");
+  paintThemeBtn();
+}
+if(mq && mq.addEventListener) mq.addEventListener("change", applyTheme);
+function paintThemeBtn(){ const b=$("#themeBtn"); if(b) b.textContent = isDark() ? "☀ লাইট" : "☾ ডার্ক"; }
+$("#themeBtn").addEventListener("click",()=>{ S.set.theme = isDark() ? "light" : "dark"; save(); applyTheme(); if(!$("#view-set").hidden) renderSet(); });
+
+/* ---------- helpers ---------- */
+function shuffle(a){ for(let i=a.length-1;i>0;i--){ const j=Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; } return a; }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g, m => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m])); }
+function toast(msg){ const t=$("#toast"); t.textContent=msg; t.classList.add("show"); clearTimeout(toast._t); toast._t=setTimeout(()=>t.classList.remove("show"),2200); }
+function mmss(ms){ const s=Math.floor(ms/1000); return bn(Math.floor(s/60))+":"+bn(String(s%60).padStart(2,"0")); }
+function limits(c){ // per-question time limits, tuned by length
+  const L = c.q.length + c.o.reduce((a,b)=>a+b.length,0);
+  const f = Math.min(2.2, Math.max(0.8, L/90));
+  return {fast: 8000*f, slow: 20000*f};
+}
+const chOrder = () => DATA.chapters.slice().sort((a,b)=>b.w-a.w).map(c=>c.n);
+
+/* ---------- pools ---------- */
+function basePool(){
+  const set = new Set(S.set.chapters);
+  return CARDS.filter(c => set.has(c.c) && (!S.set.starOnly || starred(c)));
+}
+function chapterMastery(n){
+  const all = CARDS.filter(c=>c.c===n); if(!all.length) return 0;
+  return all.filter(c=>cs(c.id).m).length / all.length;
+}
+
+/* ---------- session ---------- */
+let sess = null, cur = null;
+function newSession(mode){
+  sess = {mode, done:new Set(), t0:Date.now(), count:0, right:0, ch:null, last:[], ended:false};
+  if(mode==="chapter"){ sess.ch = firstOpenChapter(); }
+  if(mode==="morning"){ sess.limit = 15*60*1000; }
+  renderModes(); next();
+}
+function firstOpenChapter(){
+  const set = new Set(S.set.chapters);
+  for(const n of chOrder()){ if(set.has(n) && chapterMastery(n)<1) return n; }
+  return chOrder().find(n=>set.has(n)) || chOrder()[0];
+}
+function poolFor(){
+  let p = basePool();
+  if(sess.mode==="chapter") p = p.filter(c=>c.c===sess.ch);
+  if(sess.mode==="wrong") p = p.filter(c=>cs(c.id).w>0 && !sess.done.has(c.id));
+  if(sess.mode==="star") p = CARDS.filter(c=>new Set(S.set.chapters).has(c.c) && starred(c) && !sess.done.has(c.id));
+  if(sess.mode==="morning") p = p.filter(c=>{ const s=cs(c.id); return (s.w>0 || starred(c) || s.last==="hard" || s.last==="again") && !sess.done.has(c.id); });
+  return p;
+}
+function weightOf(c){
+  let w = (CH[c.c] ? CH[c.c].w : 1) * (starred(c) ? 1.25 : 1);
+  if(sess.last[0]===c.c) w *= 0.35; else if(sess.last[1]===c.c) w *= 0.65;
+  return w;
+}
+function pickWeighted(list){
+  if(!S.set.shuffleQ) return list[0];
+  const tot = list.reduce((a,c)=>a+weightOf(c),0); let r = Math.random()*tot;
+  for(const c of list){ r -= weightOf(c); if(r<=0) return c; } return list[list.length-1];
+}
+function choose(){
+  const review = sess.mode==="wrong"||sess.mode==="star"||sess.mode==="morning";
+  let pool = poolFor();
+  if(!review) pool = pool.filter(c=>!cs(c.id).m);
+  if(!pool.length) return null;
+  // 1) due cards first
+  const due = pool.filter(c=>{ const s=cs(c.id); return s.d!=null && s.d<=S.tick; }).sort((a,b)=>cs(a.id).d-cs(b.id).d);
+  if(due.length) return due[0];
+  // 2) unseen (or not yet answered this review session): real board MCQs before new ones
+  let fresh = review ? pool.filter(c=>{ const s=cs(c.id); return !(s.d!=null && s.d>S.tick); }) : pool.filter(c=>cs(c.id).n===0);
+  if(review && sess.mode==="wrong") fresh.sort((a,b)=>cs(b.id).w-cs(a.id).w);
+  if(review && sess.mode==="morning") fresh.sort((a,b)=>(cs(b.id).w*2+(starred(b)?1:0)+(CH[b.c]?CH[b.c].w:0)) - (cs(a.id).w*2+(starred(a)?1:0)+(CH[a.c]?CH[a.c].w:0)));
+  if(fresh.length){
+    const real = fresh.filter(c=>c.r); const set = real.length ? real : fresh;
+    if(review && sess.mode!=="star") return S.set.shuffleQ ? pickWeighted(set.slice(0,8)) : set[0];
+    if(sess.mode==="chapter" && !S.set.shuffleQ) return set[0];
+    return pickWeighted(set);
+  }
+  // 3) nothing new: bring the soonest scheduled card forward
+  const later = pool.filter(c=>cs(c.id).d!=null).sort((a,b)=>cs(a.id).d-cs(b.id).d);
+  if(later.length){ S.tick = cs(later[0].id).d; return later[0]; }
+  return null;
+}
+
+/* ---------- render card ---------- */
+let timerInt = null;
+function next(){
+  clearInterval(timerInt);
+  if(sess.mode==="morning" && Date.now()-sess.t0 >= sess.limit){ return endSession("সকালের ১৫ মিনিট শেষ!"); }
+  const c = choose();
+  if(!c){
+    if(sess.mode==="chapter"){ return chapterDone(); }
+    return endSession(sess.mode==="wrong" ? "ভুল প্রশ্ন আর বাকি নেই।" : "এই সেটের সব কার্ড শেষ।");
+  }
+  let order = [0,1,2,3]; if(S.set.shuffleO) shuffle(order);
+  cur = {c, order, t0:Date.now(), answered:false, pick:null, snap:null, auto:null, rating:null};
+  renderCard(); updateStatus();
+  $("#nextBtn").disabled = true; $("#nextBtn").textContent = "উত্তর বেছে নাও";
+  window.scrollTo({top:0});
+}
+function renderCard(){
+  const c = cur.c, s = cs(c.id), ch = CH[c.c];
+  const code = c.k==="code";
+  const pat = PAT[c.k] || {};
+  let h = `<article class="card" aria-live="polite">
+    <div class="meta">
+      <span class="tag">অধ্যায় ${bn(c.c)}</span>
+      <span class="tag ${c.r?"real":""}">${c.r?"বোর্ড প্রশ্ন":"বই থেকে নতুন"}</span>
+      ${c.s?`<span class="stars" title="গুরুত্ব">${"★".repeat(Math.min(c.s,5))}</span>`:""}
+      ${s.w?`<span class="tag" style="color:var(--bad)">আগে ভুল ${bn(s.w)} বার</span>`:""}
+      <span class="grow"></span>
+      ${S.set.timer?`<span class="timer" id="tmr">${mmss(0)}</span>`:""}
+      <button class="starbtn" id="starBtn" aria-pressed="${starred(c)}" aria-label="তারকা চিহ্ন">${starred(c)?"★":"☆"}</button>
+    </div>
+    <p class="q ${code?"code":""}">${esc(c.q)}</p>
+    ${c.b?`<div class="boards">${esc(c.b)}</div>`:""}
+    ${S.set.hints && pat.n ? `<div class="hint"><b>ধরন: ${esc(pat.n)}</b><br>${esc(pat.tip||"")}</div>`:""}
+    <div class="opts" role="group" aria-label="বিকল্প">`;
+  cur.order.forEach((oi,pos)=>{
+    h += `<button class="opt ${code?"code":""}" data-oi="${oi}" id="opt${pos}"><span class="ol">${LBL[pos]}</span><span class="ot">${esc(c.o[oi])}</span></button>`;
+  });
+  h += `</div><div id="fbHost"></div></article>`;
+  $("#cardHost").innerHTML = h;
+  document.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>answer(+b.dataset.oi)));
+  $("#starBtn").addEventListener("click",toggleStar);
+  if(S.set.timer){ timerInt = setInterval(()=>{ const t=$("#tmr"); if(t && !cur.answered) t.textContent = mmss(Date.now()-cur.t0); }, 500); }
+}
+function toggleStar(){
+  const c = cur.c;
+  if(c.st){ toast("এটি বোর্ডে বারবার আসা ধারণা, তাই স্থায়ী তারকা।"); return; }
+  if(S.ustar[c.id]) delete S.ustar[c.id]; else S.ustar[c.id]=true;
+  save(); const b=$("#starBtn"); b.setAttribute("aria-pressed",starred(c)); b.textContent = starred(c)?"★":"☆";
+}
+const RNAME = {again:"Again", hard:"Hard", good:"Good", easy:"Easy"};
+const RDESC = {again:"৩ কার্ড পরে আবার আসবে", hard:"৮ কার্ড পরে আবার আসবে", good:"পরে আবার আসবে, দুইবার Good হলে আয়ত্ত", easy:"আয়ত্ত হয়ে গেছে"};
+function answer(oi){
+  if(cur.answered) return;
+  clearInterval(timerInt);
+  const c = cur.c, s = cs(c.id), ms = Date.now()-cur.t0, ok = oi===c.a, lim = limits(c);
+  cur.answered = true; cur.pick = oi; cur.ms = ms;
+  cur.snap = JSON.parse(JSON.stringify(s));
+  let r;
+  if(!ok) r = "again";
+  else if(ms >= lim.slow || s.last==="again") r = "hard";
+  else if(ms < lim.fast && s.w===0) r = "easy";
+  else r = "good";
+  cur.auto = r;
+  S.tick++; s.n++; s.ms += ms;
+  S.time[c.c] = (S.time[c.c]||0) + Math.min(ms, 120000);
+  applyRating(s, r);
+  sess.count++; if(ok) sess.right++;
+  sess.last.unshift(c.c); sess.last.length = Math.min(sess.last.length,2);
+  if(sess.mode!=="mix" && sess.mode!=="chapter" && ok) sess.done.add(c.id);
+  save();
+  // paint options
+  document.querySelectorAll(".opt").forEach(b=>{
+    const i = +b.dataset.oi; b.disabled = true;
+    if(i===c.a) b.classList.add("right"); else if(i===oi) b.classList.add("wrong"); else b.classList.add("dim");
+  });
+  const pos = cur.order.indexOf(c.a);
+  const pat = PAT[c.k] || {};
+  $("#fbHost").innerHTML = `<div class="fb">
+    <div class="verdict ${ok?"ok":"no"}">${ok?"সঠিক!":"ভুল হয়েছে।"} সঠিক উত্তর: ${LBL[pos]}. ${esc(c.o[c.a])}</div>
+    <div class="lesson"><div class="lh">শিক্ষা</div><p>${esc(c.l)} <span class="pg">(পৃ. ${esc(c.p)})</span></p>
+      ${pat.n?`<p style="font-size:.88rem;color:var(--muted)"><b>উত্তরের ধরন:</b> ${esc(pat.n)}. ${esc(pat.tip||"")}</p>`:""}</div>
+    ${c.f?`<div class="flag"><b>সতর্কতা:</b> ${esc(c.f)}</div>`:""}
+    <div class="rate" id="rateRow"></div>
+  </div>`;
+  paintRate();
+  const nb = $("#nextBtn"); nb.disabled = false; nb.textContent = "পরের প্রশ্ন"; nb.focus({preventScroll:true});
+  const fbEl = $("#fbHost"); if(fbEl && fbEl.scrollIntoView){ const rm = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches; fbEl.scrollIntoView({behavior: rm?"auto":"smooth", block:"nearest"}); }
+  updateStatus();
+  checkChapterConfetti(c.c);
+}
+function applyRating(s, r){
+  if(r==="again"){ s.w++; s.g=0; s.d=S.tick+3; s.m=false; }
+  else if(r==="hard"){ s.d=S.tick+8; s.m=false; }
+  else if(r==="good"){ s.g++; if(s.g>=2){ s.m=true; s.d=null; } else { s.d=S.tick+20; s.m=false; } }
+  else if(r==="easy"){ s.m=true; s.d=null; s.g=Math.max(s.g,2); }
+  s.last = r;
+}
+function paintRate(){
+  const r = cur.rating || cur.auto;
+  const t = (cur.ms/1000).toFixed(0);
+  let h = `<span class="rlabel">স্বয়ংক্রিয় রেটিং: <b>${RNAME[r]}</b>, ${RDESC[r]} (সময় ${bn(t)} সেকেন্ড)</span><span>বদলাতে চাইলে:</span>`;
+  ["again","hard","good","easy"].forEach(k=>{ h += `<button data-r="${k}" aria-pressed="${k===r}">${RNAME[k]}</button>`; });
+  $("#rateRow").innerHTML = h;
+  document.querySelectorAll("#rateRow button").forEach(b=>b.addEventListener("click",()=>override(b.dataset.r)));
+}
+function override(r){
+  const id = cur.c.id; const s = cs(id);
+  const keepN = s.n, keepMs = s.ms;
+  Object.assign(s, JSON.parse(JSON.stringify(cur.snap))); s.n = keepN; s.ms = keepMs;
+  applyRating(s, r); cur.rating = r;
+  if(sess.mode!=="mix" && sess.mode!=="chapter"){ if(r==="again") sess.done.delete(id); else if(cur.pick===cur.c.a) sess.done.add(id); }
+  save(); paintRate(); updateStatus(); checkChapterConfetti(cur.c.c);
+}
+function checkChapterConfetti(n){
+  if(chapterMastery(n)>=1 && !S.mastered100[n]){ S.mastered100[n]=true; save(); confetti(); toast(`অধ্যায় ${bn(n)}: ১০০% আয়ত্ত!`); }
+}
+function chapterDone(){
+  const ord = chOrder().filter(n=>S.set.chapters.includes(n));
+  const i = ord.indexOf(sess.ch); const nx = ord.slice(i+1).find(n=>chapterMastery(n)<1) ?? ord[i+1];
+  $("#cardHost").innerHTML = `<div class="card empty"><h2>অধ্যায় ${bn(sess.ch)} শেষ</h2>
+    <p>এই অধ্যায়ের সব কার্ড এখন আয়ত্তে বা পরে আসার অপেক্ষায়।</p>
+    ${nx!=null?`<button class="btn solid" id="nextCh">পরের অধ্যায় (অধ্যায় ${bn(nx)})</button>`:`<p>সব অধ্যায় শেষ!</p>`}</div>`;
+  if(nx!=null) $("#nextCh").addEventListener("click",()=>{ sess.ch = nx; next(); });
+  $("#nextBtn").disabled = true; $("#nextBtn").textContent = "পরের প্রশ্ন";
+  updateStatus();
+}
+function endSession(msg){
+  sess.ended = true;
+  const acc = sess.count ? Math.round(sess.right*100/sess.count) : 0;
+  $("#cardHost").innerHTML = `<div class="card empty"><h2>${esc(msg)}</h2>
+    <p>এই সেশনে ${bn(sess.count)}টি প্রশ্ন, সঠিক ${bn(sess.right)}টি (${bn(acc)}%)। সময় ${mmss(Date.now()-sess.t0)}।</p>
+    <div class="celebrate">দারুণ! এবার "শুধু ভুল" মোডে দুর্বল জায়গা ঝালিয়ে নাও।</div>
+    <button class="btn solid" id="again">আবার শুরু করো</button></div>`;
+  $("#again").addEventListener("click",()=>newSession(sess.mode));
+  $("#nextBtn").disabled = true;
+  if(sess.count) confetti();
+  updateStatus();
+}
+function updateStatus(){
+  if(!sess) return;
+  const pool = basePool();
+  const m = pool.filter(c=>cs(c.id).m).length;
+  let left = "", right = "";
+  if(sess.mode==="chapter" && sess.ch!=null){ const p = CARDS.filter(c=>c.c===sess.ch); const mm = p.filter(c=>cs(c.id).m).length; left = `অধ্যায় ${bn(sess.ch)}: ${bn(mm)}/${bn(p.length)} আয়ত্ত`; $("#stBar").style.width = (mm*100/p.length)+"%"; }
+  else { left = `আয়ত্ত ${bn(m)}/${bn(pool.length)}`; $("#stBar").style.width = (pool.length? m*100/pool.length:0)+"%"; }
+  right = `এই সেশন: ${bn(sess.right)}/${bn(sess.count)}`;
+  if(sess.mode==="morning"){ const rem = Math.max(0, sess.limit-(Date.now()-sess.t0)); right += ` · বাকি ${mmss(rem)}`; }
+  if(sess.mode==="wrong"){ right = `বাকি ভুল ${bn(poolFor().length)} · ` + right; }
+  $("#stLeft").textContent = left; $("#stRight").textContent = right;
+  $("#brandSub").textContent = `${bn(CARDS.length)} কার্ড`;
+}
+const MODES = [["mix","মিশ্র"],["chapter","অধ্যায় ধরে"],["wrong","শুধু ভুল"],["star","শুধু তারকা"],["morning","সকালের ১৫ মিনিট"]];
+function renderModes(){
+  const h = MODES.map(([k,n])=>`<button class="chip" data-m="${k}" aria-pressed="${sess&&sess.mode===k}">${n}</button>`).join("");
+  $("#modes").innerHTML = h;
+  document.querySelectorAll("#modes .chip").forEach(b=>b.addEventListener("click",()=>{
+    const m = b.dataset.m;
+    if(m==="mix"||m==="chapter"){ S.set.order = m; save(); }
+    newSession(m);
+  }));
+}
+$("#nextBtn").addEventListener("click",()=>{ if(cur && cur.answered) next(); });
+document.addEventListener("keydown",e=>{
+  if($("#view-quiz").hidden || !cur) return;
+  if(e.target && (e.target.tagName==="INPUT"||e.target.tagName==="SELECT")) return;
+  const map = {"1":0,"2":1,"3":2,"4":3,"ক":0,"খ":1,"গ":2,"ঘ":3,"১":0,"২":1,"৩":2,"৪":3};
+  if(!cur.answered && e.key in map){ const b = $("#opt"+map[e.key]); if(b) b.click(); }
+  else if(cur.answered && (e.key==="Enter"||e.key===" ") && document.activeElement && !document.activeElement.closest(".rate")){ e.preventDefault(); next(); }
+});
+
+/* ---------- confetti ---------- */
+function confetti(){
+  if(window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const cv = $("#confetti"), ctx = cv.getContext("2d"); const W = cv.width = innerWidth, H = cv.height = innerHeight;
+  const cols = [getComputedStyle(document.documentElement).getPropertyValue("--accent").trim()||"#006a4e","#f2c055","#e4572e","#3fbf8f","#7ea2ff"];
+  const P = Array.from({length:140},()=>({x:W/2+(Math.random()-.5)*W*.3,y:H*.35,vx:(Math.random()-.5)*12,vy:-Math.random()*12-4,r:Math.random()*6+3,c:cols[Math.floor(Math.random()*cols.length)],a:Math.random()*6,va:(Math.random()-.5)*.3}));
+  let f=0; (function tick(){ ctx.clearRect(0,0,W,H); P.forEach(p=>{ p.vy+=.35; p.x+=p.vx; p.y+=p.vy; p.vx*=.99; p.a+=p.va; ctx.save(); ctx.translate(p.x,p.y); ctx.rotate(p.a); ctx.fillStyle=p.c; ctx.fillRect(-p.r,-p.r/2,p.r*2,p.r); ctx.restore(); }); if(++f<150) requestAnimationFrame(tick); else ctx.clearRect(0,0,W,H); })();
+}
+
+/* ---------- notes ---------- */
+function renderNotes(){
+  const ord = chOrder();
+  $("#notesNav").innerHTML = ord.map(n=>`<button class="chip" data-n="${n}">অধ্যায় ${bn(n)}</button>`).join("");
+  document.querySelectorAll("#notesNav .chip").forEach(b=>b.addEventListener("click",()=>{ const el = document.getElementById("note-"+b.dataset.n); if(el) el.scrollIntoView({behavior:"smooth",block:"start"}); }));
+  let h = "";
+  ord.forEach(n=>{
+    const N = (DATA.notes||{})[n]; if(!N) return; const ch = CH[n];
+    h += `<article class="nch" id="note-${n}" style="scroll-margin-top:120px"><h2>অধ্যায় ${bn(n)}: ${esc(ch.title)}</h2>
+      <div class="nmeta">ওজন ${bn(Math.round(ch.w*100))}% · পড়ার সময় ~${bn(ch.readMin)} মিনিট · বইয়ের পৃষ্ঠা ${esc(ch.pages)}</div>`;
+    N.sections.forEach(sec=>{
+      h += `<h3>${esc(sec.h)}</h3>`;
+      sec.items.forEach(it=>{
+        if(it.trap) h += `<div class="trap"><b>ফাঁদ:</b> ${esc(it.trap)}${it.p?` <span class="pg">(পৃ. ${esc(it.p)})</span>`:""}</div>`;
+        else h += `<div class="fact"><div class="ft">${it.star?'<span class="st">★ </span>':""}${esc(it.f)} ${it.p?`<span class="pg">(পৃ. ${esc(it.p)})</span>`:""}${it.unsure?` <span class="unsure">UNSURE</span>`:""}</div>${it.c?`<div class="fc">${esc(it.c)}</div>`:""}</div>`;
+      });
+    });
+    h += `<div class="must"><b>অবশ্যই মনে রাখো</b><ol>${N.must.map(m=>`<li>${esc(m)}</li>`).join("")}</ol></div></article>`;
+  });
+  $("#notesHost").innerHTML = h;
+}
+
+/* ---------- progress ---------- */
+function renderProg(){
+  const seen = CARDS.filter(c=>cs(c.id).n>0).length, mast = CARDS.filter(c=>cs(c.id).m).length;
+  const tot = CARDS.reduce((a,c)=>a+cs(c.id).n,0), wr = CARDS.reduce((a,c)=>a+cs(c.id).w,0);
+  const acc = tot ? Math.round((tot-wr)*100/tot) : 0;
+  $("#statsHost").innerHTML = `<div><b>${bn(mast)}</b><span>আয়ত্ত কার্ড</span></div><div><b>${bn(seen)}/${bn(CARDS.length)}</b><span>দেখা হয়েছে</span></div><div><b>${bn(acc)}%</b><span>নির্ভুলতা</span></div>`;
+  $("#chHost").innerHTML = chOrder().map(n=>{
+    const ch = CH[n], p = Math.round(chapterMastery(n)*100), spent = Math.round((S.time[n]||0)/60000);
+    const cnt = CARDS.filter(c=>c.c===n).length;
+    return `<div class="chrow"><span class="cn">অধ্যায় ${bn(n)}</span><div class="bar"><i style="width:${p}%"></i></div><span class="pct">${bn(p)}%</span>
+      <span class="ct">${esc(ch.title)} · ${bn(cnt)} কার্ড · <span class="budget">কুইজ সময় ${bn(spent)}/${bn(ch.quizMin)} মিনিট</span></span></div>`;
+  }).join("");
+  const agg = {};
+  CARDS.forEach(c=>{ const s=cs(c.id); if(s.w){ const k=c.c+"|"+c.t; (agg[k]=agg[k]||{c:c.c,t:c.t,w:0,p:c.p}).w+=s.w; } });
+  const list = Object.values(agg).sort((a,b)=>b.w-a.w).slice(0,10);
+  $("#weakHost").innerHTML = list.length ? list.map(x=>`<li><span class="wc">${bn(x.w)}×</span><span>অধ্যায় ${bn(x.c)}: ${esc(x.t)} <span class="pg" style="color:var(--muted)">(পৃ. ${esc(x.p)})</span></span></li>`).join("") : `<li style="color:var(--muted)">এখনো কোনো ভুল নেই। অনুশীলন শুরু করো।</li>`;
+  $("#planHost").innerHTML = `<div style="font-size:.92rem">${(DATA.plan||[]).map(r=>`<div class="srow"><span>${esc(r[0])}</span><b style="font-variant-numeric:tabular-nums">${esc(r[1])}</b></div>`).join("")}</div>`;
+}
+$("#resetBtn").addEventListener("click",function(){
+  if(this.dataset.armed){ S.cs={}; S.tick=0; S.time={}; S.mastered100={}; save(); this.textContent="সব অগ্রগতি মুছে ফেলো"; delete this.dataset.armed; renderProg(); newSession(S.set.order); toast("অগ্রগতি মুছে ফেলা হয়েছে"); }
+  else { this.dataset.armed="1"; this.textContent="নিশ্চিত? আবার চাপো"; setTimeout(()=>{ if(this.dataset.armed){ delete this.dataset.armed; this.textContent="সব অগ্রগতি মুছে ফেলো"; } },4000); }
+});
+
+/* ---------- settings ---------- */
+function seg(id, opts, val){ return `<div class="seg" id="${id}">${opts.map(([v,n])=>`<button data-v="${v}" aria-pressed="${String(v)===String(val)}">${n}</button>`).join("")}</div>`; }
+function sw(id, val){ return `<input type="checkbox" class="sw" id="${id}" ${val?"checked":""}>`; }
+function renderSet(){
+  const s = S.set;
+  $("#setHost").innerHTML = `
+  <div class="srow"><label>থিম</label>${seg("sTheme",[["system","সিস্টেম"],["light","লাইট"],["dark","ডার্ক"]],s.theme)}</div>
+  <div class="srow"><label>রং</label><div class="swatches" id="sAccent">${ACCENTS.map(a=>`<button data-v="${a.k}" aria-pressed="${a.k===s.accent}" aria-label="${a.name}" style="background:${isDark()?a.d:a.l}"></button>`).join("")}</div></div>
+  <div class="srow"><label>লেখার আকার</label>${seg("sSize",[[16,"ছোট"],[18,"মাঝারি"],[20,"বড়"],[22,"খুব বড়"]],s.size)}</div>
+  <div class="srow"><label>ক্রম<small>মিশ্র: গুরুত্ব অনুযায়ী ওজনযুক্ত এলোমেলো। অধ্যায় ধরে: এক অধ্যায় শেষে পরেরটা।</small></label>${seg("sOrder",[["mix","মিশ্র"],["chapter","অধ্যায় ধরে"]],s.order)}</div>
+  <div class="srow"><label for="sShufQ">প্রশ্ন এলোমেলো</label>${sw("sShufQ",s.shuffleQ)}</div>
+  <div class="srow"><label for="sShufO">বিকল্প এলোমেলো<small>ক-ঘ এর ক্রম বদলাবে</small></label>${sw("sShufO",s.shuffleO)}</div>
+  <div class="srow"><label for="sHints">উত্তরের ধরন আগে দেখাও<small>উত্তর দেওয়ার আগে প্রশ্নের ধরন ও কৌশল</small></label>${sw("sHints",s.hints)}</div>
+  <div class="srow"><label for="sTimer">টাইমার দেখাও<small>সময় দেখা না গেলেও রেটিংয়ে সময় গোনা হয়</small></label>${sw("sTimer",s.timer)}</div>
+  <div class="srow"><label for="sStar">শুধু তারকা চিহ্নিত<small>বোর্ডে বারবার আসা ধারণা ও তোমার চিহ্নিত কার্ড</small></label>${sw("sStar",s.starOnly)}</div>
+  <div class="srow stack"><label>অধ্যায় ফিল্টার<small>যে অধ্যায়গুলো অনুশীলনে আসবে</small></label><div class="chfilter" id="sCh">${chOrder().map(n=>`<button class="chip" data-v="${n}" aria-pressed="${s.chapters.includes(n)}">${bn(n)}</button>`).join("")}</div></div>`;
+  const segBind = (id,key,num) => document.querySelectorAll(`#${id} button`).forEach(b=>b.addEventListener("click",()=>{ S.set[key] = num? +b.dataset.v : b.dataset.v; save(); applyTheme(); renderSet(); if(key==="order"){ newSession(S.set.order); } }));
+  segBind("sTheme","theme"); segBind("sSize","size",true); segBind("sOrder","order");
+  document.querySelectorAll("#sAccent button").forEach(b=>b.addEventListener("click",()=>{ S.set.accent=b.dataset.v; save(); applyTheme(); renderSet(); }));
+  const swBind = (id,key,restart) => $("#"+id).addEventListener("change",e=>{ S.set[key]=e.target.checked; save(); if(restart) newSession(sess?sess.mode:S.set.order); });
+  swBind("sShufQ","shuffleQ",false); swBind("sShufO","shuffleO",false); swBind("sHints","hints",false); swBind("sTimer","timer",false); swBind("sStar","starOnly",true);
+  document.querySelectorAll("#sCh button").forEach(b=>b.addEventListener("click",()=>{
+    const n=+b.dataset.v; const a=S.set.chapters; const i=a.indexOf(n);
+    if(i>=0){ if(a.length===1){ toast("অন্তত একটি অধ্যায় রাখতে হবে"); return; } a.splice(i,1); } else a.push(n);
+    save(); renderSet(); newSession(sess?sess.mode:S.set.order);
+  }));
+}
+
+/* ---------- tabs ---------- */
+document.querySelectorAll("nav.tabs button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("nav.tabs button").forEach(x=>x.setAttribute("aria-selected", x===b));
+  const v = b.dataset.view;
+  ["quiz","notes","prog","set"].forEach(k=>$("#view-"+k).hidden = k!==v);
+  $("#nextWrap").hidden = v!=="quiz";
+  if(v==="prog") renderProg(); if(v==="set") renderSet(); if(v==="notes" && !$("#notesHost").innerHTML) renderNotes();
+  window.scrollTo({top:0});
+}));
+setInterval(()=>{ if(sess && sess.mode==="morning" && !sess.ended){ updateStatus(); } },1000);
+
+applyTheme();
+newSession(S.set.order);
+window.__kit = {S, CARDS, choose:()=>choose(), sess:()=>sess, cur:()=>cur};
+})();
+</script>

@@ -1,0 +1,33 @@
+##PAGE pdf=129 printed=১২৪
+ব্যবহারিক সমস্যা # ৫ : কোন বর্ষ অধিবর্ষ কিনা তা নির্ণয় করার জন্য একটি প্রোগ্রাম লেখো।
+সমাধান: কোনো বর্ষ অধিবর্ষ (Leap year) কিনা তা জানতে হলে বর্ষ সংখ্যাটিকে ৪০০ দিয়ে ভাগ করতে হয়, ভাগশেষ শূন্য হলে তা লিপ-ইয়ার, অন্যথায় বর্ষ সংখ্যাকে ১০০ দিয়ে ভাগ করতে হয়, এবার যদি ভাগশেষ শূন্য হয় তবে তা লিপ ইয়ার নয় এবং যদি ভাগশেষ শূন্য না হয়, তবে বর্ষ সংখ্যাটিকে পুনরায় ৪ দিয়ে ভাগ করতে হয়। এখন ভাগশেষ শূন্য হলে বর্ষটি লিপ ইয়ার, নতুবা লিপ ইয়ার নয়।
+    year = int(input('Enter the year (4 Digit) to check :'))
+    if (year%400 == 0 or (year%100 != 0 and year %4 == 0)):
+        print(year, 'is a leap year.')
+    else :
+        print(year, 'is not a leap year.')
+প্রোগ্রামটি রান করে প্রাপ্ত নমুনা ফলাফল-
+    Enter the year (4 Digit) to check :2012
+    2012   is a leap year.
+    Enter the year (4 Digit) to check :1990
+    1990  is not a leap year.
+ব্যবহারিক সমস্যা # ৬ : মিটার থেকে ফুট এবং ফুট থেকে মিটারে রূপান্তর করার জন্য একটি প্রোগ্রাম লেখো।
+সমাধান: নিচে প্রোগ্রামটির কোড দেওয়া হলো।
+    print('1:Feet to Meters, 2:Meters to Feet.')
+    choice = int(input('Enter Choice: '))
+    if choice == 1:
+        num = float(input('Enter number of feet: '))
+        print('Meters: ', round((num/3.28),3))
+    else  :
+        num = float(input('Enter number of meters: '))
+        print ('Feet: ', round((num*3.28),3))
+প্রোগ্রামটি রান করে প্রাপ্ত নমুনা ফলাফল -
+    1:Feet to Meters, 2:Meters to Feet.
+    Enter Choice:1
+    Enter number of feet: 25
+    Meters: 7.622
+    1:Feet to Meters, 2:Meters to Feet.
+    Enter Choice: 2
+    Enter number of Meters: 60
+    Feet : 196.8
+একাধিক শর্ত যাচাই করার জন্য পাইথন প্রোগ্রামে “অন্যথায় যদি” অর্থে if...else স্টেটমেন্টের সাথে elif স্টেটমেন্ট ব্যবহৃত হয়। elif স্টেটমেন্ট else এবং if এর মাঝে থাকে। প্রোগ্রামে একাধিক if স্টেটমেন্ট ব্যবহারের বিকল্প হিসেবে elif স্টেটমেন্ট জনপ্রিয়। অর্থাৎ প্রোগ্রামে একাধিক শর্ত যাচাই করার জন্য elif ব্যবহৃত হয়। স্টেটমেন্ট ব্যবহারের ফরম্যাট হলো-

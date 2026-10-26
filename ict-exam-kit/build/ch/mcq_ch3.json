@@ -1,0 +1,426 @@
+{
+ "chapter": 3,
+ "mcqs": [
+  {
+   "slide": 122,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১",
+   "question": "নিচের কোনটি ডিজিটাল কনটেন্ট?",
+   "boards": "কু. বো. ’২০",
+   "options": {
+    "A": "বই",
+    "B": "ব্রডব্যান্ড",
+    "C": "ব্লগ",
+    "D": "পত্রিকা"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 123,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২",
+   "question": "ডিজিটাল কনটেন্ট কত প্রকার?",
+   "boards": "সি. বো. ’২৫; কু. বো. ’২৪; য. বো., চ. বো. ’২৩; সকল বোর্ড ২০১৭; গভর্নমেন্ট ল্যাবরেটরি হাই স্কুল, ধানমন্ডি, ঢাকা; বীরশ্রেষ্ঠ নূর মোহাম্মদ পাবলিক কলেজ, ঢাকা",
+   "options": {
+    "A": "৫",
+    "B": "8",
+    "C": "৩",
+    "D": "২"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Option B is printed with a Latin digit 8."
+  },
+  {
+   "slide": 124,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৩",
+   "question": "নিচের কোনটি ডিজিটাল কনটেন্ট নয়?",
+   "boards": "ঢা. বো. ’২৩; ফরিদপুর জিলা স্কুল, ফরিদপুর",
+   "options": {
+    "A": "ভিডিও ও ছবি",
+    "B": "অ্যানিমেশন",
+    "C": "টেক্সট",
+    "D": "(হাতের লেখা, অস্পষ্ট)"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 3,
+   "handwritten": "Option D is written by hand and is not legible enough to transcribe.",
+   "remarks": "Red box on option D marks the answer; the text of D is unreadable. A separate red box highlights the word 'নয়' in the question (emphasis only). Three gold stars: one on the title bar, one right of the question, one below the question."
+  },
+  {
+   "slide": 125,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৪",
+   "question": "কোনটি লিখিত কনটেন্ট?",
+   "boards": "ঢা. বো., রা. বো. ’২৪; য. বো. ’২৩; আইডিয়াল স্কুল এন্ড কলেজ, ঢাকা; শহীদ বীর উত্তম লে. আনোয়ার গার্লস কলেজ, ঢাকা",
+   "options": {
+    "A": "ছবি",
+    "B": "অ্যানিমেশন",
+    "C": "চিত্র",
+    "D": "শ্বেতপত্র"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "Options C and D are handwritten overlays. A tick mark sits over the D letter (teacher annotation, not the answer marker).",
+   "remarks": "Red box on option D marks the answer. The reading of option C ('চিত্র') is uncertain because it is handwritten."
+  },
+  {
+   "slide": 126,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৫",
+   "question": "শব্দ কী ধরনের কনটেন্ট?",
+   "boards": "কু. বো. ’২৫",
+   "options": {
+    "A": "ভিডিও",
+    "B": "ছবি",
+    "C": "অডিও",
+    "D": "অ্যানিমেশন"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 127,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৬",
+   "question": "ইন্টারনেটে কোনো ঘটনার ভিডিও সরাসরি সম্প্রচার করাকে কী বলে?",
+   "boards": "ঢা. বো. ’২৫; দি. বো. ’২৩; সকল বোর্ড ২০১৮, ২০১৭; আইডিয়াল স্কুল এন্ড কলেজ, মতিঝিল, ঢাকা; ভিকারুননিসা নূন স্কুল এন্ড কলেজ, ঢাকা; শহীদ বীর উত্তম লে. আনোয়ার গার্লস কলেজ, ঢাকা",
+   "options": {
+    "A": "ফেসবুক লাইভ",
+    "B": "ভিডিও স্ট্রিমিং",
+    "C": "ভিডিও শেয়ার",
+    "D": "ইউটিউব শেয়ার"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 128,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৭",
+   "question": "জনপ্রিয় ই-বুক রিডার, ‘Kindle’ এর স্বত্বাধিকারী কোন প্রতিষ্ঠান?",
+   "boards": "ঢা. বো. ’২৫; য. বো. ’২৪; সি. বো. ’২৩",
+   "options": {
+    "A": "microsoft",
+    "B": "amazon",
+    "C": "google",
+    "D": "apple"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 129,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৮",
+   "question": "মুদ্রিত বইয়ের হুবহু প্রতিলিপি কোন ফরমেটে প্রকাশিত হয়?",
+   "boards": "দি. বো. ’২৩; দিনাজপুর জিলা স্কুল, দিনাজপুর",
+   "options": {
+    "A": "Document Format-এ",
+    "B": "Html Format-এ",
+    "C": "Epub Format-এ",
+    "D": "PDF Format-এ"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 130,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "৯",
+   "question": "PDF এর পূর্ণরূপ কোনটি?",
+   "boards": "চ. বো. ’২৪; ঢাকা রেসিডেনসিয়াল মডেল কলেজ, ঢাকা; বাংলাদেশ ব্যাংক সরকারি উচ্চ বিদ্যালয়, ঢাকা",
+   "options": {
+    "A": "Preferable Document Format",
+    "B": "Preferable Digital File",
+    "C": "Portable Document File",
+    "D": "Portable Document Format"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Red box spans the lower part of option C and all of option D; the answer is D."
+  },
+  {
+   "slide": 131,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১০",
+   "question": "যে বইগুলো কেবল অনলাইনে পড়া যায় সেগুলো কোন ফরমেটে থাকে?",
+   "boards": "চ. বো. ’২৫; ম. বো. ’২৫; রা. বো. ’২৪; সি. বো. ’২৪; বগুড়া জিলা স্কুল",
+   "options": {
+    "A": "CMYK",
+    "B": "HTML",
+    "C": "RGB",
+    "D": "CSB"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 132,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১১",
+   "question": "রহিম তার ল্যাপটপে একটি বই পড়ছে। সে বইটি পড়ার সময় তার ইচ্ছেমতো বিভিন্ন শব্দার্থ জেনে নিচ্ছে। সে চাইলে বইটি ই-বুক রিডার দিয়েও পড়তে পারে।\nরহিম কোন ফরমেটে ই-বুক পড়ছে?",
+   "boards": null,
+   "options": {
+    "A": "চৌকস ই-বুক",
+    "B": "পিডিএফ",
+    "C": "ই-পর্চা",
+    "D": "ইপাব"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Red box also surrounds the phrase 'বিভিন্ন শব্দার্থ' in the question (emphasis only). Red box on option D marks the answer."
+  },
+  {
+   "slide": 133,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৩",
+   "question": "শিক্ষার কাজে ল্যাপটপ এবং স্মার্টফোনের মাঝামাঝি সম্ভাবনা রয়েছে তার নাম কী?",
+   "boards": "রা. বো. ’২৪",
+   "options": {
+    "A": "Desktop",
+    "B": "Tablet",
+    "C": "I-Pad",
+    "D": "Television"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": "Question numbering jumps from ১১ (slide 132) to ১৩ here; no ১২ on this slide."
+  },
+  {
+   "slide": 134,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৪",
+   "question": "ব্যান্ডউইথ (Bandwidth) কী?",
+   "boards": "সি. বো. ’২৫; ফরিদপুর জিলা স্কুল; সরকারি অগ্রগামী বালিকা উচ্চ বিদ্যালয় ও কলেজ, সিলেট",
+   "options": {
+    "A": "ডেটা প্রবাহের দিক",
+    "B": "ডেটা প্রবাহের হার",
+    "C": "ডেটা প্রবাহের পদ্ধতি",
+    "D": "ডেটা"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 135,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৫",
+   "question": "HTML-এর পূর্ণরূপ কোনটি?",
+   "boards": null,
+   "options": {
+    "A": "Hyper Text Marked Language",
+    "B": "High Text Markup Language",
+    "C": "Hyper Text Markup Language",
+    "D": "Hyper Tool Markup Language"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 136,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৬",
+   "question": "নিচের কোনটি ওয়েব পোর্টাল?",
+   "boards": null,
+   "options": {
+    "A": "www.facebook.com",
+    "B": "www.bangladesh.gov.bd",
+    "C": "www.wikipedia.org",
+    "D": "www.cricbuzz.org"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 137,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৭",
+   "question": "ইন্টারনেট ব্যবহারকারীরা তথ্য খোঁজার জন্য কী ব্যবহার করে?",
+   "boards": null,
+   "options": {
+    "A": "মডেম",
+    "B": "রাউটার",
+    "C": "সার্চ ইঞ্জিন",
+    "D": "ওয়েব ব্রাউজার"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 138,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৮",
+   "question": "LAN-এর পূর্ণরূপ কোনটি?",
+   "boards": null,
+   "options": {
+    "A": "Linked Area Network",
+    "B": "Large Area Network",
+    "C": "Local Area Network",
+    "D": "Least Accessed Network"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 139,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "১৯",
+   "question": "HTTP-এর পূর্ণরূপ কোনটি?",
+   "boards": null,
+   "options": {
+    "A": "Hypertext Technology Protocol",
+    "B": "Hypertool Technology Protocol",
+    "C": "Hypertext Transfer Protocol",
+    "D": "Hypertool Transfer Protocol"
+   },
+   "answer": "C",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 140,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২০",
+   "question": "ই-মেইলের পূর্ণরূপ কী?",
+   "boards": null,
+   "options": {
+    "A": "ইলেকট্রিক্যাল মেইল",
+    "B": "ইলেকট্রনিক মেইল",
+    "C": "ইন্টারনেট মেইল",
+    "D": "ইন্টারন্যাশনাল মেইল"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 141,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২১",
+   "question": "URL কী?",
+   "boards": null,
+   "options": {
+    "A": "ওয়েবসাইটের ব্যবহৃত প্রটোকল",
+    "B": "ওয়েবসাইটের পূর্ণাঙ্গ অ্যাড্রেস",
+    "C": "ওয়েব পেইজের ডোমেইন",
+    "D": "বিশ্বের প্রথম ওয়েব ব্রাউজার"
+   },
+   "answer": "B",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": null,
+   "remarks": null
+  },
+  {
+   "slide": 142,
+   "type": "mcq",
+   "style": "redwan",
+   "chapter_hint": null,
+   "qno": "২২",
+   "question": "নিচের কোনটি URL এর অংশ নয়?",
+   "boards": null,
+   "options": {
+    "A": "প্রটোকল",
+    "B": "হোস্ট নেম",
+    "C": "ডোমেইন",
+    "D": "Bookmark"
+   },
+   "answer": "D",
+   "answer_confidence": "high",
+   "stars": 0,
+   "handwritten": "Option D 'Bookmark' is written by hand.",
+   "remarks": "Red box on option D marks the answer."
+  }
+ ],
+ "other_slides": []
+}
