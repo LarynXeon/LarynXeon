@@ -122,7 +122,7 @@ section.view{display:flex;flex-direction:column;gap:18px;padding-top:8px}
 .sw{appearance:none;width:46px;height:28px;border-radius:99px;background:var(--line);position:relative;cursor:pointer;flex:0 0 auto;transition:background .2s}
 .sw::after{content:"";position:absolute;top:3px;left:3px;width:22px;height:22px;border-radius:50%;background:var(--surface);transition:transform .2s;box-shadow:0 1px 2px rgba(0,0,0,.2)}
 .sw:checked{background:var(--accent)} .sw:checked::after{transform:translateX(18px)}
-.swatches{display:flex;gap:8px}
+.swatches{display:flex;flex-wrap:wrap;gap:8px;justify-content:flex-end;max-width:12.5rem}
 .swatches button{width:30px;height:30px;border-radius:50%;border:3px solid transparent;padding:0}
 .swatches button[aria-pressed="true"]{border-color:var(--fg)}
 .chfilter{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
@@ -212,7 +212,15 @@ const ACCENTS = [
   {k:"blue", name:"নীল", l:"#2a55c9", d:"#7ea2ff"},
   {k:"plum", name:"বেগুনি", l:"#7a3fb8", d:"#c39bf2"},
   {k:"rust", name:"কমলা", l:"#b8521a", d:"#f0a070"},
-  {k:"red", name:"লাল", l:"#b0283a", d:"#ff8f9c"}
+  {k:"red", name:"লাল", l:"#b0283a", d:"#ff8f9c"},
+  {k:"teal", name:"টিল", l:"#0e7490", d:"#5fd3e8"},
+  {k:"indigo", name:"ইন্ডিগো", l:"#4338ca", d:"#a5a0ff"},
+  {k:"pink", name:"গোলাপি", l:"#c026a3", d:"#f59be0"},
+  {k:"amber", name:"হলুদ", l:"#a16207", d:"#f5c451"},
+  {k:"lime", name:"লেবু", l:"#4d7c0f", d:"#a3e635"},
+  {k:"sky", name:"আকাশি", l:"#0369a1", d:"#7cc4f5"},
+  {k:"brown", name:"কফি", l:"#7c4a2d", d:"#d9a37e"},
+  {k:"slate", name:"ধূসর", l:"#475569", d:"#b6c2d3"}
 ];
 const DEF = {theme:"system", accent:"green", size:18, shuffleQ:true, shuffleO:false, hints:false, timer:true, starOnly:false, count:80, chapters:DATA.chapters.map(c=>c.n), order:"mix"};
 
@@ -320,7 +328,7 @@ function firstOpenChapter(){
 function poolFor(){
   let p = basePool();
   if(sess.mode==="chapter") p = p.filter(c=>c.c===sess.ch);
-  if(sess.mode==="wrong") p = basePool(true).filter(c=>cs(c.id).w>0 && !sess.done.has(c.id));
+  if(sess.mode==="wrong") p = basePool(true).filter(c=>cs(c.id).w>0 && !cs(c.id).m && !sess.done.has(c.id));
   if(sess.mode==="star") p = CARDS.filter(c=>new Set(S.set.chapters).has(c.c) && starred(c) && !sess.done.has(c.id));
   if(sess.mode==="morning") p = p.filter(c=>{ const s=cs(c.id); return (s.w>0 || starred(c) || s.last==="hard" || s.last==="again") && !sess.done.has(c.id); });
   return p;
@@ -409,7 +417,7 @@ function toggleStar(){
   save(); const b=$("#starBtn"); b.setAttribute("aria-pressed",starred(c)); b.textContent = starred(c)?"★":"☆";
 }
 const RNAME = {again:"Again", hard:"Hard", good:"Good", easy:"Easy"};
-const RDESC = {again:"৩ কার্ড পরে আবার আসবে", hard:"৮ কার্ড পরে আবার আসবে", good:"পরে আবার আসবে, দুইবার Good হলে আয়ত্ত", easy:"আয়ত্ত হয়ে গেছে"};
+const RDESC = {again:"৩ কার্ড পরে আবার আসবে", hard:"৮ কার্ড পরে আবার আসবে", good:"ভুল শুধরে নিয়েছ, আর আসবে না", easy:"প্রথমবারেই সঠিক, আর আসবে না"};
 function answer(oi){
   if(cur.answered) return;
   clearInterval(timerInt);
@@ -418,9 +426,8 @@ function answer(oi){
   cur.snap = JSON.parse(JSON.stringify(s));
   let r;
   if(!ok) r = "again";
-  else if(ms >= lim.slow || s.last==="again") r = "hard";
-  else if(ms < lim.fast && s.w===0) r = "easy";
-  else r = "good";
+  else if(s.w>0) r = "good";
+  else r = "easy";
   cur.auto = r;
   S.tick++; s.n++; s.ms += ms;
   S.time[c.c] = (S.time[c.c]||0) + Math.min(ms, 120000);
@@ -452,8 +459,7 @@ function answer(oi){
 function applyRating(s, r){
   if(r==="again"){ s.w++; s.g=0; s.d=S.tick+3; s.m=false; }
   else if(r==="hard"){ s.d=S.tick+8; s.m=false; }
-  else if(r==="good"){ s.g++; if(s.g>=2){ s.m=true; s.d=null; } else { s.d=S.tick+20; s.m=false; } }
-  else if(r==="easy"){ s.m=true; s.d=null; s.g=Math.max(s.g,2); }
+  else if(r==="good"||r==="easy"){ s.m=true; s.d=null; s.g=2; }
   s.last = r;
 }
 function paintRate(){
@@ -598,7 +604,7 @@ function renderSet(){
   <div class="srow"><label for="sShufQ">প্রশ্ন এলোমেলো</label>${sw("sShufQ",s.shuffleQ)}</div>
   <div class="srow"><label for="sShufO">বিকল্প এলোমেলো<small>ক-ঘ এর ক্রম বদলাবে</small></label>${sw("sShufO",s.shuffleO)}</div>
   <div class="srow"><label for="sHints">উত্তরের ধরন আগে দেখাও<small>উত্তর দেওয়ার আগে প্রশ্নের ধরন ও কৌশল</small></label>${sw("sHints",s.hints)}</div>
-  <div class="srow"><label for="sTimer">টাইমার দেখাও<small>সময় দেখা না গেলেও রেটিংয়ে সময় গোনা হয়</small></label>${sw("sTimer",s.timer)}</div>
+  <div class="srow"><label for="sTimer">টাইমার দেখাও<small>শুধু সময় দেখার জন্য, রেটিংয়ে প্রভাব নেই</small></label>${sw("sTimer",s.timer)}</div>
   <div class="srow"><label for="sStar">শুধু তারকা চিহ্নিত<small>বোর্ডে বারবার আসা ধারণা ও তোমার চিহ্নিত কার্ড</small></label>${sw("sStar",s.starOnly)}</div>
   <div class="srow stack"><label>অধ্যায় ফিল্টার<small>যে অধ্যায়গুলো অনুশীলনে আসবে</small></label><div class="chfilter" id="sCh">${chOrder().map(n=>`<button class="chip" data-v="${n}" aria-pressed="${s.chapters.includes(n)}">${bn(n)}</button>`).join("")}</div></div>`;
   const segBind = (id,key,num) => document.querySelectorAll(`#${id} button`).forEach(b=>b.addEventListener("click",()=>{ S.set[key] = num? +b.dataset.v : b.dataset.v; save(); applyTheme(); renderSet(); if(key==="order"){ newSession(S.set.order); } }));
